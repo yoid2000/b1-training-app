@@ -3,6 +3,8 @@
 A small, offline web app for a shared Linux machine and devices on a trusted WLAN.
 Separate learner profiles, saved progress, grammar practice, and random mistake review.
 
+For a Linux installation that starts automatically on reboot, see the [Linux installation and maintenance guide](docs/linux-installation.md). It includes shell scripts for installation, updates from Git or local edits, curriculum rebuilds, service control, and database backup/restore. Run these as your normal user; they request `sudo` only where needed.
+
 ## Run
 
 Requires **Python 3.10 or newer**. No third-party packages, build step, API keys, or internet connection are needed.
@@ -91,6 +93,8 @@ python3 -m unittest discover -s tests -v
 ```
 
 The tests exercise HTTP requests, independent profiles, saved attempts, sequential unlocking through all 170 units and 3,400 answers, retakes, review selection and clearing, concurrent starts and answers, request validation, persistence, complete bilingual metadata, and curriculum integrity. They also check all 170 tutorials, reproducible tutorial builds, and that reading tutorials leaves progress unchanged. A fingerprint check protects the original 400 questions from accidental changes.
+
+Deployment-helper checks cover live SQLite WAL backups, imports/restores, saved progress, service settings, installation ownership, and HTTP startup checks. They use temporary files and do not invoke sudo or systemd. Bash syntax and a real Linux service/reboot check are separate from the Python suite.
 
 An optional client check, if Node.js is installed, runs without browser dependencies:
 

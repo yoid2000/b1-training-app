@@ -170,11 +170,11 @@ summary span { font-size: 11px; color: var(--muted); font-weight: 400; margin-le
 .example p { font-family: Georgia, serif; font-size: 20px; margin-top: 7px; }
 .goal-actions { display: flex; gap: 22px; align-items: center; margin-top: 28px; }
 .goal-actions > span { font-size: 11px; color: var(--muted); }
-.vocabulary { margin-top: 23px; }
-.vocabulary ul { list-style: none; padding: 0 24px 14px; margin: 0; }
-.vocabulary li { display: flex; align-items: flex-start; gap: 20px; padding: 13px 0; border-top: 1px solid var(--line); font-size: 13px; }
-.vocab-id { color: #8a967c; font-size: 10px; padding-top: 3px; }
-.vocabulary small { display: block; color: var(--muted); font-size: 11px; margin-top: 5px; }
+.vocabulary { margin-top: 25px; }
+.vocabulary h2 { font-size: 13px; letter-spacing: 0; line-height: 1.55; }
+.vocabulary h2 span { display: inline-block; margin-left: 10px; color: var(--muted); font-size: 11px; font-weight: 400; }
+.vocabulary ul { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 0 24px; padding: 0; margin: 12px 0 0; list-style: none; }
+.vocabulary li { padding: 10px 0; border-top: 1px solid var(--line); font-size: 13px; overflow-wrap: anywhere; }
 .empty-state { text-align: center; border: 1px dashed #cdd7bf; border-radius: 12px; padding: 65px 25px; }
 .empty-state > .icon { width: 34px; height: 34px; color: #90a276; margin-bottom: 24px; }
 .empty-state h2 { font-family: Georgia, serif; font-weight: 400; font-size: 28px; }
@@ -377,7 +377,6 @@ summary span { font-size: 11px; color: var(--muted); font-weight: 400; margin-le
   .syllabus-row > span:nth-child(2) { flex: 1; min-width: 0; }
   .syllabus-row small { font-size: 9px; }
   .syllabus-row > small { width: 100%; padding-left: 30px; }
-  .vocabulary li { gap: 12px; }
   .practice-top { gap: 15px; }
   .practice-unit { font-size: 9px; max-width: 55%; }
   .back-link { font-size: 11px; white-space: nowrap; }
