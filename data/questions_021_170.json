@@ -6,7 +6,7 @@
     "goal_de": "Verwende durch, gegen, ohne, um, für und bis mit passenden Akkusativformen und unterscheide ihre Bedeutungen.",
     "questions": [
       {
-        "prompt": "Wir gehen durch ___ Park. (der Park)",
+        "prompt": "Wir gehen durch ___ Park. (bestimmter Artikel)",
         "options": [
           "einer",
           "den",
@@ -20,7 +20,7 @@
         "unit_id": 21
       },
       {
-        "prompt": "Sie kauft Blumen für ___ Nachbarin. (die Nachbarin)",
+        "prompt": "Sie kauft Blumen für ___ Nachbarin. (bestimmter Artikel)",
         "options": [
           "dem",
           "die",
@@ -34,7 +34,7 @@
         "unit_id": 21
       },
       {
-        "prompt": "Ohne ___ Führerschein darf er nicht fahren. (der Führerschein)",
+        "prompt": "Ohne ___ Führerschein darf er nicht fahren. (bestimmter Artikel)",
         "options": [
           "einer",
           "der",
@@ -48,7 +48,7 @@
         "unit_id": 21
       },
       {
-        "prompt": "Der Ball fliegt gegen ___ Fenster. (das Fenster)",
+        "prompt": "Der Ball fliegt gegen ___ Fenster. (bestimmter Artikel)",
         "options": [
           "einen",
           "dem",
@@ -62,7 +62,7 @@
         "unit_id": 21
       },
       {
-        "prompt": "Wir laufen um ___ Gebäude. (das Gebäude)",
+        "prompt": "Wir laufen um ___ Gebäude. (bestimmter Artikel)",
         "options": [
           "den",
           "das",
@@ -76,7 +76,7 @@
         "unit_id": 21
       },
       {
-        "prompt": "Das Geschenk ist für ___ Kollegen. (ein Kollege)",
+        "prompt": "Das Geschenk ist für ___ Kollegen. (unbestimmter Artikel)",
         "options": [
           "der",
           "einem",
@@ -90,7 +90,7 @@
         "unit_id": 21
       },
       {
-        "prompt": "Sie fährt gegen ___ Baum. (der Baum)",
+        "prompt": "Sie fährt gegen ___ Baum.",
         "options": [
           "das",
           "den",
@@ -104,7 +104,7 @@
         "unit_id": 21
       },
       {
-        "prompt": "Er kommt ohne ___ Tasche. (die Tasche)",
+        "prompt": "Er kommt ohne ___ Tasche. (bestimmter Artikel)",
         "options": [
           "die",
           "einer",
@@ -118,7 +118,7 @@
         "unit_id": 21
       },
       {
-        "prompt": "Wir gehen durch ___ Tunnel. (der Tunnel)",
+        "prompt": "Wir gehen durch ___ Tunnel. (bestimmter Artikel)",
         "options": [
           "einem",
           "der",
@@ -132,7 +132,7 @@
         "unit_id": 21
       },
       {
-        "prompt": "Das ist für ___ Kind. (das Kind)",
+        "prompt": "Das ist für ___ Kind. (bestimmter Artikel)",
         "options": [
           "das",
           "dem",
@@ -146,7 +146,7 @@
         "unit_id": 21
       },
       {
-        "prompt": "Die Sitzung dauert bis ___ nächsten Freitag. (der Freitag)",
+        "prompt": "Die Sitzung dauert bis ___ nächsten Freitag. (bestimmter Artikel)",
         "options": [
           "den",
           "einen",
@@ -160,7 +160,7 @@
         "unit_id": 21
       },
       {
-        "prompt": "Sie kämpfen gegen ___ Lärm. (der Lärm)",
+        "prompt": "Sie kämpfen gegen ___ Lärm. (bestimmter Artikel)",
         "options": [
           "einen",
           "einem",
@@ -174,7 +174,7 @@
         "unit_id": 21
       },
       {
-        "prompt": "Er geht ohne ___ Mantel hinaus. (ein Mantel)",
+        "prompt": "Er geht ohne ___ Mantel hinaus. (unbestimmter Artikel)",
         "options": [
           "das",
           "einer",
@@ -188,7 +188,7 @@
         "unit_id": 21
       },
       {
-        "prompt": "Wir sitzen um ___ Tisch. (der Tisch)",
+        "prompt": "Wir sitzen um ___ Tisch. (bestimmter Artikel)",
         "options": [
           "den",
           "einer",
@@ -202,7 +202,7 @@
         "unit_id": 21
       },
       {
-        "prompt": "Die Reise führt durch ___ Schweiz. (die Schweiz)",
+        "prompt": "Die Reise führt durch ___ Schweiz. (bestimmter Artikel)",
         "options": [
           "der",
           "dem",
@@ -216,7 +216,7 @@
         "unit_id": 21
       },
       {
-        "prompt": "Ich bezahle für ___ Kaffee. (der Kaffee)",
+        "prompt": "Ich bezahle für ___ Kaffee. (bestimmter Artikel)",
         "options": [
           "den",
           "dem",
@@ -230,7 +230,7 @@
         "unit_id": 21
       },
       {
-        "prompt": "Das Auto fährt gegen ___ Mauer. (eine Mauer)",
+        "prompt": "Das Auto fährt gegen ___ Mauer. (unbestimmter Artikel)",
         "options": [
           "einem",
           "den",
@@ -244,7 +244,7 @@
         "unit_id": 21
       },
       {
-        "prompt": "Die Gruppe geht um ___ See. (der See)",
+        "prompt": "Die Gruppe geht um ___ See. (bestimmter Artikel)",
         "options": [
           "der",
           "einen",
@@ -258,7 +258,7 @@
         "unit_id": 21
       },
       {
-        "prompt": "Ohne ___ Genehmigung geht es nicht. (die Genehmigung)",
+        "prompt": "Ohne ___ Genehmigung geht es nicht. (bestimmter Artikel)",
         "options": [
           "der",
           "die",
@@ -272,7 +272,7 @@
         "unit_id": 21
       },
       {
-        "prompt": "Wir brauchen Zeit für ___ Gespräch. (das Gespräch)",
+        "prompt": "Wir brauchen Zeit für ___ Gespräch. (bestimmter Artikel)",
         "options": [
           "die",
           "einem",
@@ -294,7 +294,7 @@
     "goal_de": "Verwende aus, außer, bei, mit, nach, seit, von, zu und gegenüber mit dem Dativ, auch bei neuen Nomen und Pronomen.",
     "questions": [
       {
-        "prompt": "Sie kommt aus ___ Büro. (das Büro)",
+        "prompt": "Sie kommt aus ___ Büro. (bestimmter Artikel)",
         "options": [
           "die",
           "einem",
@@ -308,7 +308,7 @@
         "unit_id": 22
       },
       {
-        "prompt": "Wir fahren mit ___ Fähre. (die Fähre)",
+        "prompt": "Wir fahren mit ___ Fähre. (bestimmter Artikel)",
         "options": [
           "die",
           "der",
@@ -322,7 +322,7 @@
         "unit_id": 22
       },
       {
-        "prompt": "Er wohnt bei ___ Bruder. (der Bruder)",
+        "prompt": "Er wohnt bei ___ Bruder.",
         "options": [
           "der",
           "das",
@@ -336,7 +336,7 @@
         "unit_id": 22
       },
       {
-        "prompt": "Ich gehe zu ___ Apotheke. (die Apotheke)",
+        "prompt": "Ich gehe zu ___ Apotheke. (bestimmter Artikel)",
         "options": [
           "der",
           "einen",
@@ -350,7 +350,7 @@
         "unit_id": 22
       },
       {
-        "prompt": "Das Paket ist von ___ Verlag. (der Verlag)",
+        "prompt": "Das Paket ist von ___ Verlag. (bestimmter Artikel)",
         "options": [
           "dem",
           "der",
@@ -364,7 +364,7 @@
         "unit_id": 22
       },
       {
-        "prompt": "Seit ___ Ausbildung arbeitet sie hier. (die Ausbildung)",
+        "prompt": "Seit ___ Ausbildung arbeitet sie hier. (bestimmter Artikel)",
         "options": [
           "den",
           "der",
@@ -378,7 +378,7 @@
         "unit_id": 22
       },
       {
-        "prompt": "Außer ___ Lehrerin ist niemand da. (die Lehrerin)",
+        "prompt": "Außer ___ Lehrerin ist niemand da. (bestimmter Artikel)",
         "options": [
           "dem",
           "der",
@@ -392,7 +392,7 @@
         "unit_id": 22
       },
       {
-        "prompt": "Die Bank liegt gegenüber ___ Rathaus. (das Rathaus)",
+        "prompt": "Die Bank liegt gegenüber ___ Rathaus. (bestimmter Artikel)",
         "options": [
           "das",
           "die",
@@ -406,7 +406,7 @@
         "unit_id": 22
       },
       {
-        "prompt": "Nach ___ Essen gehen wir spazieren. (das Essen)",
+        "prompt": "Nach ___ Essen gehen wir spazieren. (bestimmter Artikel)",
         "options": [
           "einer",
           "einen",
@@ -420,7 +420,7 @@
         "unit_id": 22
       },
       {
-        "prompt": "Wir sprechen mit ___ Gästen. (die Gäste)",
+        "prompt": "Wir sprechen mit ___ Gästen. (bestimmter Artikel)",
         "options": [
           "die",
           "einem",
@@ -434,7 +434,7 @@
         "unit_id": 22
       },
       {
-        "prompt": "Sie fährt zu ___ Eltern. (die Eltern)",
+        "prompt": "Sie fährt zu ___ Eltern. (bestimmter Artikel)",
         "options": [
           "den",
           "dem",
@@ -448,7 +448,7 @@
         "unit_id": 22
       },
       {
-        "prompt": "Er kommt aus ___ kleinen Dorf. (ein Dorf)",
+        "prompt": "Er kommt aus ___ kleinen Dorf. (unbestimmter Artikel)",
         "options": [
           "einem",
           "das",
@@ -462,7 +462,7 @@
         "unit_id": 22
       },
       {
-        "prompt": "Bei ___ Prüfung war sie ruhig. (die Prüfung)",
+        "prompt": "Bei ___ Prüfung war sie ruhig. (bestimmter Artikel)",
         "options": [
           "den",
           "der",
@@ -476,7 +476,7 @@
         "unit_id": 22
       },
       {
-        "prompt": "Das Hotel liegt ___ Bahnhof gegenüber. (der Bahnhof)",
+        "prompt": "Das Hotel liegt ___ Bahnhof gegenüber.",
         "options": [
           "die",
           "der",
@@ -490,7 +490,7 @@
         "unit_id": 22
       },
       {
-        "prompt": "Ich fahre mit ___ Freund. (ein Freund)",
+        "prompt": "Ich fahre mit ___ Freund. (unbestimmter Artikel)",
         "options": [
           "einen",
           "die",
@@ -504,7 +504,7 @@
         "unit_id": 22
       },
       {
-        "prompt": "Seit ___ Woche regnet es. (eine Woche)",
+        "prompt": "Seit ___ Woche regnet es. (unbestimmter Artikel)",
         "options": [
           "der",
           "einen",
@@ -518,7 +518,7 @@
         "unit_id": 22
       },
       {
-        "prompt": "Von ___ Kollegen habe ich viel gelernt. (die Kollegen)",
+        "prompt": "Von ___ Kollegen habe ich viel gelernt. (Plural; bestimmter Artikel)",
         "options": [
           "die",
           "dem",
@@ -532,7 +532,7 @@
         "unit_id": 22
       },
       {
-        "prompt": "Nach ___ Konzert treffen wir uns. (das Konzert)",
+        "prompt": "Nach ___ Konzert treffen wir uns. (bestimmter Artikel)",
         "options": [
           "dem",
           "den",
@@ -546,7 +546,7 @@
         "unit_id": 22
       },
       {
-        "prompt": "Außer ___ Kind sind alle müde. (das Kind)",
+        "prompt": "Außer ___ Kind sind alle müde.",
         "options": [
           "den",
           "das",
@@ -560,7 +560,7 @@
         "unit_id": 22
       },
       {
-        "prompt": "Wir wohnen gegenüber ___ Schule. (die Schule)",
+        "prompt": "Wir wohnen gegenüber ___ Schule. (bestimmter Artikel)",
         "options": [
           "die",
           "der",
@@ -1158,7 +1158,7 @@
     "goal_de": "Verstehe während mit einer Nomengruppe als Zeitangabe und bilde in der geschriebenen Standardsprache den Genitiv.",
     "questions": [
       {
-        "prompt": "Während ___ Kurses bleibt das Handy aus. (der Kurs)",
+        "prompt": "Während ___ Kurses bleibt das Handy aus.",
         "options": [
           "der",
           "die",
@@ -1172,7 +1172,7 @@
         "unit_id": 25
       },
       {
-        "prompt": "Während ___ Prüfung darf man nicht sprechen. (die Prüfung)",
+        "prompt": "Während ___ Prüfung darf man nicht sprechen.",
         "options": [
           "dem",
           "den",
@@ -1186,7 +1186,7 @@
         "unit_id": 25
       },
       {
-        "prompt": "Während ___ Gesprächs mache ich Notizen. (das Gespräch)",
+        "prompt": "Während ___ Gesprächs mache ich Notizen.",
         "options": [
           "das",
           "des",
@@ -1214,7 +1214,7 @@
         "unit_id": 25
       },
       {
-        "prompt": "Während ___ Vortrags hört er aufmerksam zu. (der Vortrag)",
+        "prompt": "Während ___ Vortrags hört er aufmerksam zu.",
         "options": [
           "die",
           "der",
@@ -1228,7 +1228,7 @@
         "unit_id": 25
       },
       {
-        "prompt": "Während ___ Reise lesen wir viel. (die Reise)",
+        "prompt": "Während ___ Reise lesen wir viel.",
         "options": [
           "die",
           "der",
@@ -1242,7 +1242,7 @@
         "unit_id": 25
       },
       {
-        "prompt": "Während ___ Essens klingelt das Telefon. (das Essen)",
+        "prompt": "Während ___ Essens klingelt das Telefon.",
         "options": [
           "den",
           "dem",
@@ -1270,7 +1270,7 @@
         "unit_id": 25
       },
       {
-        "prompt": "Während ___ Aufenthalts besuchen wir das Museum. (der Aufenthalt)",
+        "prompt": "Während ___ Aufenthalts besuchen wir das Museum.",
         "options": [
           "des",
           "der",
@@ -1284,7 +1284,7 @@
         "unit_id": 25
       },
       {
-        "prompt": "Während ___ Ausbildung wohnt sie zu Hause. (die Ausbildung)",
+        "prompt": "Während ___ Ausbildung wohnt sie zu Hause.",
         "options": [
           "der",
           "den",
@@ -1298,7 +1298,7 @@
         "unit_id": 25
       },
       {
-        "prompt": "Während ___ Festes regnet es. (das Fest)",
+        "prompt": "Während ___ Festes regnet es.",
         "options": [
           "dem",
           "des",
@@ -1326,7 +1326,7 @@
         "unit_id": 25
       },
       {
-        "prompt": "Während ___ Streiks fahren keine Busse. (der Streik)",
+        "prompt": "Während ___ Streiks fahren keine Busse.",
         "options": [
           "des",
           "das",
@@ -1340,7 +1340,7 @@
         "unit_id": 25
       },
       {
-        "prompt": "Während ___ Beratung stellen wir Fragen. (die Beratung)",
+        "prompt": "Während ___ Beratung stellen wir Fragen.",
         "options": [
           "der",
           "des",
@@ -1354,7 +1354,7 @@
         "unit_id": 25
       },
       {
-        "prompt": "Während ___ Gewitters bleiben wir drinnen. (das Gewitter)",
+        "prompt": "Während ___ Gewitters bleiben wir drinnen.",
         "options": [
           "dem",
           "die",
@@ -1382,7 +1382,7 @@
         "unit_id": 25
       },
       {
-        "prompt": "Während ___ Besuchs sprechen wir Deutsch. (der Besuch)",
+        "prompt": "Während ___ Besuchs sprechen wir Deutsch.",
         "options": [
           "dem",
           "das",
@@ -1396,7 +1396,7 @@
         "unit_id": 25
       },
       {
-        "prompt": "Während ___ Pause gehe ich hinaus. (die Pause)",
+        "prompt": "Während ___ Pause gehe ich hinaus.",
         "options": [
           "die",
           "der",
@@ -1410,7 +1410,7 @@
         "unit_id": 25
       },
       {
-        "prompt": "Während ___ Spiels bleibt er ruhig. (das Spiel)",
+        "prompt": "Während ___ Spiels bleibt er ruhig.",
         "options": [
           "des",
           "der",
@@ -5766,7 +5766,7 @@
     "goal_de": "Ersetze bekannte Nomen durch passende Formen von welcher und verstehe welche als unbestimmte Mengenangabe.",
     "questions": [
       {
-        "prompt": "Hier sind zwei Mäntel. ___ gefällt dir? (der Mantel; Frage)",
+        "prompt": "Hier sind zwei Mäntel. ___ gefällt dir? (Frage)",
         "options": [
           "Welche",
           "Welchen",
@@ -5794,7 +5794,7 @@
         "unit_id": 41
       },
       {
-        "prompt": "Von den Kleidern: ___ nimmst du? (das Kleid; Akkusativ)",
+        "prompt": "Von den Kleidern: ___ nimmst du? (Akkusativ Singular)",
         "options": [
           "Welche",
           "Welcher",
@@ -5822,7 +5822,7 @@
         "unit_id": 41
       },
       {
-        "prompt": "Von den Taschen: ___ gehört dir? (die Tasche)",
+        "prompt": "Von den Taschen: ___ gehört dir?",
         "options": [
           "Welchen",
           "Welches",
@@ -5836,7 +5836,7 @@
         "unit_id": 41
       },
       {
-        "prompt": "Ich brauche Klebstoff. Hast du ___? (unbestimmte Menge; der Klebstoff)",
+        "prompt": "Ich brauche Klebstoff. Hast du ___? (unbestimmte Menge)",
         "options": [
           "welches",
           "welchem",
@@ -5864,7 +5864,7 @@
         "unit_id": 41
       },
       {
-        "prompt": "Es gibt mehrere Geräte. ___ funktioniert? (das Gerät; Singular)",
+        "prompt": "Es gibt mehrere Geräte. ___ funktioniert? (Singular)",
         "options": [
           "Welches",
           "Welchen",
@@ -5934,7 +5934,7 @@
         "unit_id": 41
       },
       {
-        "prompt": "Es gibt mehrere Züge. ___ fährt zuerst? (der Zug)",
+        "prompt": "Es gibt mehrere Züge. ___ fährt zuerst?",
         "options": [
           "Welches",
           "Welcher",
@@ -5976,7 +5976,7 @@
         "unit_id": 41
       },
       {
-        "prompt": "Hier stehen zwei Wagen. ___ leihst du mir? (der Wagen)",
+        "prompt": "Hier stehen zwei Wagen. ___ leihst du mir? (Singular)",
         "options": [
           "Welche",
           "Welches",
@@ -6004,7 +6004,7 @@
         "unit_id": 41
       },
       {
-        "prompt": "Es gibt zwei Schulen. ___ besuchst du? (die Schule)",
+        "prompt": "Es gibt zwei Schulen. ___ besuchst du?",
         "options": [
           "Welcher",
           "Welchen",
@@ -6032,7 +6032,7 @@
         "unit_id": 41
       },
       {
-        "prompt": "Die Schlüssel liegen dort. ___ ist deiner? (der Schlüssel)",
+        "prompt": "Die Schlüssel liegen dort. ___ ist deiner?",
         "options": [
           "Welche",
           "Welchen",
@@ -8280,7 +8280,7 @@
         "unit_id": 49
       },
       {
-        "prompt": "Der Garten ___ Nachbarn ist groß. (ein Nachbar)",
+        "prompt": "Der Garten ___ Nachbarn ist groß.",
         "options": [
           "den",
           "des",
@@ -8358,7 +8358,7 @@
     "goal_de": "Verwende innerhalb, außerhalb, statt und anstatt mit Nomengruppen, in formeller Schriftsprache meist im Genitiv.",
     "questions": [
       {
-        "prompt": "Innerhalb ___ Woche bekommen Sie Bescheid. (eine Woche)",
+        "prompt": "Innerhalb ___ Woche bekommen Sie Bescheid. (unbestimmter Artikel)",
         "options": [
           "dem",
           "die",
@@ -8372,7 +8372,7 @@
         "unit_id": 50
       },
       {
-        "prompt": "Außerhalb ___ Stadt ist es ruhiger. (die Stadt)",
+        "prompt": "Außerhalb ___ Stadt ist es ruhiger. (bestimmter Artikel)",
         "options": [
           "die",
           "der",
@@ -8386,7 +8386,7 @@
         "unit_id": 50
       },
       {
-        "prompt": "Statt ___ Originals schicken wir eine Kopie. (das Original)",
+        "prompt": "Statt ___ Originals schicken wir eine Kopie. (bestimmter Artikel)",
         "options": [
           "einer",
           "der",
@@ -8400,7 +8400,7 @@
         "unit_id": 50
       },
       {
-        "prompt": "Anstatt ___ Autos nehmen wir das Rad. (das Auto)",
+        "prompt": "Anstatt ___ Autos nehmen wir das Rad. (bestimmter Artikel)",
         "options": [
           "des",
           "einen",
@@ -8414,7 +8414,7 @@
         "unit_id": 50
       },
       {
-        "prompt": "Innerhalb ___ Gebäudes gilt Rauchverbot. (das Gebäude)",
+        "prompt": "Innerhalb ___ Gebäudes gilt Rauchverbot. (bestimmter Artikel)",
         "options": [
           "des",
           "einem",
@@ -8442,7 +8442,7 @@
         "unit_id": 50
       },
       {
-        "prompt": "Statt ___ Rechnung bekam ich eine Mahnung. (die Rechnung)",
+        "prompt": "Statt ___ Rechnung bekam ich eine Mahnung. (bestimmter Artikel)",
         "options": [
           "einem",
           "der",
@@ -8456,7 +8456,7 @@
         "unit_id": 50
       },
       {
-        "prompt": "Innerhalb ___ Monats muss es fertig sein. (der Monat)",
+        "prompt": "Innerhalb ___ Monats muss es fertig sein. (bestimmter Artikel)",
         "options": [
           "einem",
           "die",
@@ -8470,7 +8470,7 @@
         "unit_id": 50
       },
       {
-        "prompt": "Außerhalb ___ Geländes darf man parken. (das Gelände)",
+        "prompt": "Außerhalb ___ Geländes darf man parken. (bestimmter Artikel)",
         "options": [
           "den",
           "des",
@@ -8484,7 +8484,7 @@
         "unit_id": 50
       },
       {
-        "prompt": "Anstatt ___ Lehrerin kommt der Leiter. (die Lehrerin)",
+        "prompt": "Anstatt ___ Lehrerin kommt der Leiter. (bestimmter Artikel)",
         "options": [
           "des",
           "einen",
@@ -8512,7 +8512,7 @@
         "unit_id": 50
       },
       {
-        "prompt": "Außerhalb ___ Arbeitszeit bin ich nicht erreichbar. (die Arbeitszeit)",
+        "prompt": "Außerhalb ___ Arbeitszeit bin ich nicht erreichbar. (bestimmter Artikel)",
         "options": [
           "der",
           "das",
@@ -8526,7 +8526,7 @@
         "unit_id": 50
       },
       {
-        "prompt": "Statt ___ Briefes schreibe ich eine E-Mail. (der Brief)",
+        "prompt": "Statt ___ Briefes schreibe ich eine E-Mail. (bestimmter Artikel)",
         "options": [
           "das",
           "die",
@@ -8540,7 +8540,7 @@
         "unit_id": 50
       },
       {
-        "prompt": "Innerhalb ___ Frist zahlen wir. (die Frist)",
+        "prompt": "Innerhalb ___ Frist zahlen wir. (bestimmter Artikel)",
         "options": [
           "einen",
           "der",
@@ -8554,7 +8554,7 @@
         "unit_id": 50
       },
       {
-        "prompt": "Außerhalb ___ Dorfes liegt ein See. (das Dorf)",
+        "prompt": "Außerhalb ___ Dorfes liegt ein See.",
         "options": [
           "der",
           "das",
@@ -8568,7 +8568,7 @@
         "unit_id": 50
       },
       {
-        "prompt": "Anstatt ___ Vertrags bekam sie ein Angebot. (der Vertrag)",
+        "prompt": "Anstatt ___ Vertrags bekam sie ein Angebot. (bestimmter Artikel)",
         "options": [
           "der",
           "einer",
@@ -8582,7 +8582,7 @@
         "unit_id": 50
       },
       {
-        "prompt": "Innerhalb ___ Jahres änderte sich alles. (das Jahr)",
+        "prompt": "Innerhalb ___ Jahres änderte sich alles. (bestimmter Artikel)",
         "options": [
           "des",
           "einen",
@@ -8596,7 +8596,7 @@
         "unit_id": 50
       },
       {
-        "prompt": "Außerhalb ___ Schule wartet die Gruppe. (die Schule)",
+        "prompt": "Außerhalb ___ Schule wartet die Gruppe.",
         "options": [
           "das",
           "den",
@@ -8624,7 +8624,7 @@
         "unit_id": 50
       },
       {
-        "prompt": "Innerhalb ___ Stunde ist er da. (eine Stunde)",
+        "prompt": "Innerhalb ___ Stunde ist er da. (unbestimmter Artikel)",
         "options": [
           "des",
           "einer",
@@ -9376,7 +9376,7 @@
         "unit_id": 53
       },
       {
-        "prompt": "Welches Rad? Ich nehme ___. (dies-; Neutrum)",
+        "prompt": "Welches Rad? Ich nehme ___. (dies-)",
         "options": [
           "denen",
           "der",
@@ -9390,7 +9390,7 @@
         "unit_id": 53
       },
       {
-        "prompt": "Welche Tasche? Ich nehme ___. (dies-; Femininum)",
+        "prompt": "Welche Tasche? Ich nehme ___. (dies-)",
         "options": [
           "das",
           "dieser",
@@ -10444,7 +10444,7 @@
         "unit_id": 57
       },
       {
-        "prompt": "Hast du ___ Stift? (maskulin, Akkusativ)",
+        "prompt": "Hast du ___ Stift? (Akkusativ)",
         "options": [
           "irgendein",
           "irgendetwas",
@@ -10458,7 +10458,7 @@
         "unit_id": 57
       },
       {
-        "prompt": "___ Frau wartet draußen. (eine nicht näher bekannte Frau)",
+        "prompt": "___ Frau wartet draußen. (nicht näher bekannt)",
         "options": [
           "Irgendeine",
           "Irgendjemandem",
@@ -10472,7 +10472,7 @@
         "unit_id": 57
       },
       {
-        "prompt": "Ich brauche ___ Buch, egal welches. (neutrum)",
+        "prompt": "Ich brauche ___ Buch, egal welches.",
         "options": [
           "irgendjemand",
           "irgendein",
@@ -10570,7 +10570,7 @@
         "unit_id": 57
       },
       {
-        "prompt": "Kennst du ___ Arzt? (maskulin, Akkusativ)",
+        "prompt": "Kennst du ___ Arzt? (Akkusativ)",
         "options": [
           "irgendein",
           "irgendeine",
@@ -10598,7 +10598,7 @@
         "unit_id": 57
       },
       {
-        "prompt": "Sie sucht ___ Stelle. (feminin, Akkusativ)",
+        "prompt": "Sie sucht ___ Stelle. (Akkusativ)",
         "options": [
           "irgendwo",
           "irgendeine",
@@ -10612,7 +10612,7 @@
         "unit_id": 57
       },
       {
-        "prompt": "Wir finden ___ Hotel. (neutrum, Akkusativ)",
+        "prompt": "Wir finden ___ Hotel. (Akkusativ)",
         "options": [
           "irgendein",
           "irgendetwas",
@@ -11392,7 +11392,7 @@
         "unit_id": 60
       },
       {
-        "prompt": "Bei ___ neuen Leiterin des Teams bin ich. (Dativ Femininum)",
+        "prompt": "Bei ___ neuen Leiterin des Teams bin ich. (Dativ)",
         "options": [
           "der",
           "neuen",
@@ -11406,7 +11406,7 @@
         "unit_id": 60
       },
       {
-        "prompt": "Mit ___ alten Gerät meines Bruders arbeite ich. (Dativ Neutrum)",
+        "prompt": "Mit ___ alten Gerät meines Bruders arbeite ich. (Dativ)",
         "options": [
           "den",
           "hat",
@@ -11434,7 +11434,7 @@
         "unit_id": 60
       },
       {
-        "prompt": "Ein ___ Kollege meiner Schwester kommt. (neu; maskulin)",
+        "prompt": "Ein ___ Kollege meiner Schwester kommt. (neu)",
         "options": [
           "den",
           "haben",
@@ -11448,7 +11448,7 @@
         "unit_id": 60
       },
       {
-        "prompt": "Die ___ Kollegin meines Bruders kommt. (neu; feminin)",
+        "prompt": "Die ___ Kollegin meines Bruders kommt. (neu)",
         "options": [
           "neue",
           "ist",
@@ -13106,7 +13106,7 @@
         "unit_id": 66
       },
       {
-        "prompt": "Das Kind ist ___ Vater ähnlich. (der Vater)",
+        "prompt": "Das Kind ist ___ Vater ähnlich.",
         "options": [
           "auf",
           "zu",
@@ -13120,7 +13120,7 @@
         "unit_id": 66
       },
       {
-        "prompt": "Die Lösung ist ___ ersten ähnlich. (die erste Lösung)",
+        "prompt": "Die Lösung ist ___ ersten ähnlich.",
         "options": [
           "über",
           "auf",
@@ -42384,7 +42384,7 @@
         "unit_id": 168
       },
       {
-        "prompt": "Ich fahre mit den Zug. (gemeint: der Zug, Singular)",
+        "prompt": "Ich fahre mit den Zug. (Singular)",
         "options": [
           "A recognized regional gender variation",
           "A recognized regional standard auxiliary variant",

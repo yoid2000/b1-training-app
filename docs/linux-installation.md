@@ -57,7 +57,7 @@ bash scripts/install-linux.sh
 
 The installer checks the configuration, runs the Python test suite using temporary databases, validates the service definition, installs and enables the service, and checks the app's HTTP response. The tests currently exercise all 3,400 answers and can take a minute or more. A failed check stops installation with a nonzero exit status.
 
-The default bind address is `0.0.0.0`, port **8000**, allowing connections from other WLAN devices. To choose another port:
+For a **new service installation**, the default bind address is `0.0.0.0`, port **8188**, allowing connections from other WLAN devices. To choose another port:
 
 ```bash
 bash scripts/install-linux.sh --port 8080
@@ -67,9 +67,21 @@ Ports must be between 1024 and 65535. To restrict access to the Linux device its
 
 The installer can be run again to repair the service or change the host/port. It keeps the existing host and port when those options are omitted and preserves the service database. It refuses to replace a service belonging to another checkout or account. When a future repository update changes the service definition or installation settings, re-run this installer; the regular update script does not rewrite systemd configuration.
 
+### Change an existing installation to port 8188
+
+An older installation may have port **8000** saved in `/etc/b1-training-app.json`. Running `bash scripts/install-linux.sh` again without `--port` preserves that saved port, even though the current default is 8188. In that case, output such as `Listen: 0.0.0.0:8000` reflects the saved configuration.
+
+To switch the existing service to 8188, run:
+
+```bash
+bash scripts/install-linux.sh --port 8188
+```
+
+This saves the new port and restarts the service, preserving learner progress. With the default bind address, the installer should print `Listen: 0.0.0.0:8188`. Open the app using port 8188 and update any firewall rule that previously allowed port 8000. Later installer runs without `--port` will keep 8188.
+
 ## Preserve progress from an existing manual installation
 
-Stop any manually started copy of `python3 app.py` before switching to the service. It may already be using port 8000. For a first service installation with existing progress:
+Stop any manually started copy of `python3 app.py` before switching to the service. It may already be using port 8188. For a first service installation with existing progress:
 
 ```bash
 bash scripts/install-linux.sh --import-db instance/practice.sqlite3
@@ -83,7 +95,7 @@ Once installed, use the service scripts. A plain `python3 app.py` still uses the
 
 ## Open the app and check reboot startup
 
-On the Linux machine open **http://localhost:8000**. On another WLAN device open **http://LINUX-IP:8000**, using your chosen port if different. Find the address with:
+On the Linux machine open **http://localhost:8188**. On another WLAN device open **http://LINUX-IP:8188**, using your chosen port if different. Find the address with:
 
 ```bash
 hostname -I
@@ -94,7 +106,7 @@ Use the WLAN IPv4 address, not a Docker/VPN address. A DHCP reservation in your 
 If a firewall is enabled, allow the chosen TCP port **from your trusted WLAN subnet**. The scripts do not change firewall rules. For example, **only if your subnet is actually `192.168.1.0/24` and you use UFW**:
 
 ```bash
-sudo ufw allow from 192.168.1.0/24 to any port 8000 proto tcp
+sudo ufw allow from 192.168.1.0/24 to any port 8188 proto tcp
 ```
 
 Do not enable a new firewall remotely without preserving your SSH access. Profiles have no passwords, so keep this service on the trusted network and do not forward its port from the internet.

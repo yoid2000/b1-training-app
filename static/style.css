@@ -199,6 +199,10 @@ summary span { font-size: 11px; color: var(--muted); font-weight: 400; margin-le
 .question-card { border: 1px solid var(--line); background: var(--white); border-radius: 13px; padding: 35px 38px 27px; }
 .question-card .section-kicker { letter-spacing: 1px; font-size: 10px; line-height: 1.8; }
 .question-prompt { font-family: Georgia, serif; font-size: clamp(23px, 2.5vw, 32px); font-weight: 400; letter-spacing: -.5px; line-height: 1.65; margin: 20px 0 27px; }
+.question-heading { display: flex; align-items: center; gap: 14px; }
+.question-heading .question-prompt { flex: 1; min-width: 0; }
+.translation-button { flex-shrink: 0; min-width: 40px; min-height: 40px; padding: 7px; border: 1px solid var(--line); border-radius: 6px; background: var(--white); color: var(--green); font-size: 11px; font-weight: 600; }
+.translation-button:hover { background: var(--green-light); border-color: var(--green); }
 .blank { display: inline-block; border-bottom: 2px solid #c4b278; line-height: 1; min-width: 55px; }
 .answer-options { display: grid; gap: 11px; }
 .answer-option { display: flex; align-items: center; gap: 15px; background: var(--white); border: 1px solid #dce1d5; border-radius: 7px; padding: 12px 15px; width: 100%; text-align: left; min-height: 56px; }
@@ -423,6 +427,9 @@ summary span { font-size: 11px; color: var(--muted); font-weight: 400; margin-le
 .tutorial-close { display: flex; align-items: center; gap: 6px; margin: 0 0 12px auto; padding: 8px 10px; border: 0; border-radius: 5px; background: var(--green-light); color: var(--green); font-size: 12px; }
 .tutorial-close .icon { width: 16px; height: 16px; }
 .tutorial-dialog h2 { font: 400 30px/1.3 Georgia, serif; margin: 0 0 19px; padding-right: 5px; }
+.translation-dialog { max-width: 560px; }
+.translation-source { color: var(--muted); font-size: 14px; line-height: 1.8; padding-bottom: 17px; border-bottom: 1px solid var(--line); overflow-wrap: anywhere; }
+.translation-text { font-size: 18px; line-height: 1.8; margin-top: 17px; white-space: pre-wrap; overflow-wrap: anywhere; }
 .tutorial-pattern { background: #edf1e7; border-left: 3px solid #9eac80; padding: 15px 18px; border-radius: 0 6px 6px 0; margin: 15px 0 22px; }
 .tutorial-pattern code { font-size: 13px; line-height: 1.7; white-space: pre-wrap; overflow-wrap: anywhere; }
 .tutorial-rules { margin: 0 0 24px; padding-left: 20px; }

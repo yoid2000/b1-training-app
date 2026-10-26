@@ -42,8 +42,8 @@ Der Kollege wartet. Ich helfe ___. (der-Pronomen)|dem
 Die Frau ist hier. Ich danke ___. (der-Pronomen)|der
 Die Kinder spielen. Ich rufe ___. (der-Pronomen)|die
 Von den Mänteln nehme ich ___. (dies-; Singular)|diesen
-Welches Rad? Ich nehme ___. (dies-; Neutrum)|dieses
-Welche Tasche? Ich nehme ___. (dies-; Femininum)|diese
+Welches Rad? Ich nehme ___. (dies-)|dieses
+Welche Tasche? Ich nehme ___. (dies-)|diese
 Welcher Bus fährt? ___ fährt zuerst. (dies-)|Dieser|Masculine nominative dies- takes -er, with initial capitalization.
 Mit welchem Wagen? Mit ___. (dies-)|diesem
 Mit welcher Frau? Mit ___. (dies-)|dieser
@@ -128,19 +128,19 @@ Ich habe den Schlüssel ___ liegen lassen. (Ort)|irgendwo
 Wir treffen uns ___ nächste Woche. (Zeit)|irgendwann
 Es muss ___ funktionieren. (Art und Weise)|irgendwie
 Ich möchte ___ essen. (Sache)|irgendetwas
-Hast du ___ Stift? (maskulin, Akkusativ)|irgendeinen
-___ Frau wartet draußen. (eine nicht näher bekannte Frau)|Irgendeine|Irgendeine is an unspecified feminine nominative determiner.
-Ich brauche ___ Buch, egal welches. (neutrum)|irgendein
+Hast du ___ Stift? (Akkusativ)|irgendeinen
+___ Frau wartet draußen. (nicht näher bekannt)|Irgendeine|Irgendeine is an unspecified feminine nominative determiner.
+Ich brauche ___ Buch, egal welches.|irgendein
 Wir müssen ___ fragen. (Person; mit Kasusendung)|irgendjemanden
 Er hat ___ geholfen. (Person; mit Kasusendung)|irgendjemandem
 Sie wohnt ___ in Bayern. (Ort)|irgendwo
 Wir kommen ___ wieder. (Zeit)|irgendwann
 Er hat ___ vergessen. (Sache)|irgendetwas
 Ich muss das ___ lösen. (Methode)|irgendwie
-Kennst du ___ Arzt? (maskulin, Akkusativ)|irgendeinen
+Kennst du ___ Arzt? (Akkusativ)|irgendeinen
 ___ hat mein Fahrrad genommen. (Person)|Irgendjemand|Irgendjemand is an unspecified nominative person pronoun.
-Sie sucht ___ Stelle. (feminin, Akkusativ)|irgendeine
-Wir finden ___ Hotel. (neutrum, Akkusativ)|irgendein
+Sie sucht ___ Stelle. (Akkusativ)|irgendeine
+Wir finden ___ Hotel. (Akkusativ)|irgendein
 Ich habe mit ___ gesprochen. (Person; mit Kasusendung)|irgendjemandem
 Er wartet auf ___. (Person; mit Kasusendung)|irgendjemanden
 """, "'{answer}' matches the requested person, thing, place, time or manner reference; inflected person/determiner forms also follow the clause's case.")
@@ -202,11 +202,11 @@ Das Auto meiner Eltern ___ kaputt. (sein)|ist
 Die Schlüssel des Büros ___ weg. (sein)|sind
 Die Tür der beiden Räume ___ offen. (sein)|ist
 Mit ___ beiden neuen Kollegen meiner Schwester arbeite ich. (Dativ Plural)|den
-Bei ___ neuen Leiterin des Teams bin ich. (Dativ Femininum)|der
-Mit ___ alten Gerät meines Bruders arbeite ich. (Dativ Neutrum)|dem
+Bei ___ neuen Leiterin des Teams bin ich. (Dativ)|der
+Mit ___ alten Gerät meines Bruders arbeite ich. (Dativ)|dem
 Die ___ Kollegen meiner Schwester kommen. (neu; Plural)|neuen
-Ein ___ Kollege meiner Schwester kommt. (neu; maskulin)|neuer
-Die ___ Kollegin meines Bruders kommt. (neu; feminin)|neue
+Ein ___ Kollege meiner Schwester kommt. (neu)|neuer
+Die ___ Kollegin meines Bruders kommt. (neu)|neue
 Der Sohn meiner Nachbarn ___ hier. (sein)|ist
 Die Wohnungen des Besitzers ___ hell. (sein)|sind
 Das Ende der langen Gespräche ___ erreicht. (sein)|ist
@@ -369,8 +369,8 @@ Wir sind ___ dem Vorschlag einverstanden.|mit
 Er ist ___ der Reise bereit.|zu
 Ich bin ___ den Fehler verantwortlich.|für
 Sie ist ___ ihre Tochter besorgt.|um|Besorgt um takes accusative and names the person one worries about.
-Das Kind ist ___ Vater ähnlich. (der Vater)|dem
-Die Lösung ist ___ ersten ähnlich. (die erste Lösung)|der
+Das Kind ist ___ Vater ähnlich.|dem
+Die Lösung ist ___ ersten ähnlich.|der
 Ich bin ___ das Ergebnis gespannt.|auf
 Sie ist ___ die Nachricht glücklich.|über
 Wir sind ___ dem Service unzufrieden.|mit

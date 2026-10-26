@@ -5,6 +5,8 @@ Separate learner profiles, saved progress, grammar practice, and random mistake 
 
 For a Linux installation that starts automatically on reboot, see the [Linux installation and maintenance guide](docs/linux-installation.md). It includes shell scripts for installation, updates from Git or local edits, curriculum rebuilds, service control, and database backup/restore. Run these as your normal user; they request `sudo` only where needed.
 
+New Linux service installations default to port **8188**. Reinstalling preserves the saved port, including 8000 on older installations. To switch an existing service to 8188, run `bash scripts/install-linux.sh --port 8188`; this restarts the service and preserves learner progress.
+
 ## Run
 
 Requires **Python 3.10 or newer**. No third-party packages, build step, API keys, or internet connection are needed.
@@ -13,7 +15,7 @@ Requires **Python 3.10 or newer**. No third-party packages, build step, API keys
 python3 app.py
 ```
 
-Open **http://localhost:8000** on the server, or **http://YOUR-LINUX-IP:8000** on other devices on the same WLAN. Run `hostname -I` on Linux to find the machine's address. The server listens on all network interfaces by default. If the machine has a firewall, allow TCP port 8000 from your trusted WLAN only.
+Open **http://localhost:8188** on the server, or **http://YOUR-LINUX-IP:8188** on other devices on the same WLAN. Run `hostname -I` on Linux to find the machine's address. The server listens on all network interfaces by default. If the machine has a firewall, allow TCP port 8188 from your trusted WLAN only.
 
 On Windows, use `python app.py`. Stop the server with **Ctrl+C**.
 
@@ -30,6 +32,7 @@ The default database is `instance/practice.sqlite3`, relative to the app directo
 
 - Choose an existing profile or create one by name. Each browser remembers its selected profile. Switch profiles from the sidebar; different devices can choose different learners simultaneously.
 - Work through all **170 units** in syllabus order. Every unit contains a short German and English grammar goal, the original syllabus example, assigned vocabulary, and **20 multiple-choice questions with English explanations**: **3,400 questions** in total.
+- Click the small **EN** button beside a practice question to see its English translation in a popup. Translations work offline in unit practice and mistake review, before or after answering. Close the popup or press **Escape** to return to the question without changing progress.
 - Open **Grammar tutorial** on a unit's introduction, question/answer pages, or results to read its rules, sentence pattern, two German examples with English translations, and a common pitfall. All **170 tutorials** stay hidden until requested. In mistake review, the button follows the current question's unit. Close the tutorial or press **Escape** to return to the same question; reading it does not affect scores or progress.
 - Click an answer for immediate feedback and the correct answer. Use **Why this answer?** for a short English explanation. Other options remain clickable so you can explore them.
 - The **first choice per question per attempt** counts. Clicking another option afterward never changes the saved result. Progress saves after each answer; returning to a unit resumes the unfinished attempt.
@@ -40,7 +43,7 @@ The default database is `instance/practice.sqlite3`, relative to the app directo
 
 All **170 units and 2,050 assigned vocabulary entries** are bundled in `data/syllabus.json`. All units now have practice questions and unlock sequentially. The full syllabus is visible under **My units → Full syllabus**. Vocabulary entries preserve the syllabus wording and notes, rather than inventing dictionary definitions.
 
-Questions include sentence completion, grammatical forms, clause analysis, and interpretation. Later recognition units practise understanding constructions such as passive forms, reported speech, and regional variation. The original 400 questions, their options, and their IDs are unchanged, so existing progress remains compatible. Existing learners who finished unit 20 can continue directly to unit 21.
+Questions include sentence completion, grammatical forms, clause analysis, and interpretation. Later recognition units practise understanding constructions such as passive forms, reported speech, and regional variation. The original 400 questions keep their options and IDs, so existing progress remains compatible. Parenthetical gender hints have been removed from question prompts; necessary word, case, number, and article-type instructions remain. Existing learners who finished unit 20 can continue directly to unit 21.
 
 ## Local network model
 
@@ -69,6 +72,8 @@ python3 tools/build_tutorials.py
 ```
 
 The builder checks that all 170 syllabus units have a tutorial. Tutorials load locally when requested and require no additional packages or services.
+
+English question translations are bundled in `data/question_translations.json`, keyed by question ID. Each entry stores the current German prompt in `de` and its translation in `en`. Keep blanks in the translation and retain German words when they are the subject of a grammar question or an exercise cue. When editing a prompt, update both fields in its translation entry; startup and content checks reject missing or stale translations. No translation service or model is needed to run the app.
 
 The original unit 1–20 question rows have six pipe-separated fields:
 
@@ -102,7 +107,7 @@ An optional client check, if Node.js is installed, runs without browser dependen
 node tests/client.mjs
 ```
 
-It checks rendering and client state with a DOM stub, including answer feedback, explanations, saved first choices, navigation, results, escaped content, and optional tutorials on unit and review pages. It does not replace visual browser testing.
+It checks rendering and client state with a DOM stub, including answer feedback, explanations, saved first choices, navigation, results, escaped content, translation popups, and optional tutorials on unit and review pages. It does not replace visual browser testing.
 
 ## Language references
 

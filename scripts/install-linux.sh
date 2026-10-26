@@ -7,7 +7,7 @@ usage() {
 Usage: bash scripts/install-linux.sh [options]
   --install-prerequisites  Install python3, git, and util-linux using apt-get
   --host ADDRESS          Bind address (default: 0.0.0.0; keep existing on reinstall)
-  --port NUMBER           TCP port, 1024–65535 (default: 8000; keep existing on reinstall)
+  --port NUMBER           TCP port, 1024–65535 (default: 8188; keep existing on reinstall)
   --import-db PATH        Import an existing app SQLite database on first installation
   --help                  Show this help
 Run as your normal user. sudo is used for package and systemd setup only.

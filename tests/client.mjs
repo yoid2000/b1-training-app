@@ -67,7 +67,9 @@ const unit = {id: 1, title: 'Perfekt mit haben', stage: 'A2', completed: false, 
   goal_de: 'Beschreibe abgeschlossene Handlungen.', goal_en: 'Describe completed actions.', example: 'Ich habe gearbeitet.', vocabulary: [{id: 'V0005', term: 'aber', note: ''}]};
 const fixtureDashboard = {user: {id: 1, name: '<img src=x onerror=alert(1)>'}, units: [unit], next_unit: 1, completed: 0, prepared: 170, syllabus_total: 170, attempts: 0, correct: 0, mistakes: 0, active_review: null};
 const fixturePractice = {id: 'test-run', mode: 'unit', unit, completed: false, questions: [1, 2].map(i => ({
-  id: 'q' + i, unit_id: 1, instruction: 'Complete the sentence.', prompt: 'Ich ___ gearbeitet.', options: ['habe', 'bin', 'ist', 'sind'], answer: null,
+  id: 'q' + i, unit_id: 1, instruction: 'Complete the sentence.', prompt: i === 1 ? 'Ich ___ gearbeitet.' : 'Ich ___ gelernt.',
+  translation_en: i === 1 ? 'I ___ worked.' : 'I ___ studied. <img src=x onerror=alert(1)>',
+  options: ['habe', 'bin', 'ist', 'sind'], answer: null,
 }))};
 const saved = new Map();
 const calls = [];
@@ -139,6 +141,21 @@ assert.match(html, /Question <strong>1<\/strong> of 2/);
 assert.equal(document.querySelector('#next-question').disabled, true);
 assert.equal(document.querySelector('#explain').disabled, true);
 assert.equal(document.querySelector('#tutorial-dialog').open, false);
+assert.ok(document.querySelector('#show-translation'));
+assert.equal(document.querySelector('#translation-dialog').open, false);
+const untranslatedPage = html;
+const translationTrigger = document.querySelector('#show-translation');
+const beforeTranslationCalls = calls.length;
+await translationTrigger.trigger();
+assert.equal(document.querySelector('#translation-dialog').open, true);
+assert.match(html, /lang="en">I ___ worked\./);
+await document.querySelector('#close-translation').trigger();
+assert.equal(document.querySelector('#translation-dialog').open, false);
+assert.equal(translationTrigger.focused, true);
+assert.equal(html, untranslatedPage);
+assert.equal(calls.length, beforeTranslationCalls);
+assert.equal(run('practice.questions[0].answer'), null);
+assert.equal(document.querySelector('#next-question').disabled, true);
 await document.querySelector('[data-tutorial="1"]').trigger();
 await document.querySelector('#close-tutorial').trigger();
 assert.equal(calls.filter(call => call.url === '/api/tutorial/1').length, 1); // Cached across pages.
@@ -155,6 +172,13 @@ assert.match(html, /Arbeiten uses haben/);
 const answeredPage = html;
 const savedAnswer = run('JSON.stringify(practice.questions[0].answer)');
 const answerCalls = calls.filter(call => call.url === '/api/answer').length;
+await document.querySelector('#show-translation').trigger();
+// Native Escape closes dialogs through the same close event.
+document.querySelector('#translation-dialog').close();
+assert.equal(document.querySelector('#show-translation').focused, true);
+assert.equal(run('JSON.stringify(practice.questions[0].answer)'), savedAnswer);
+assert.equal(html, answeredPage);
+assert.equal(calls.filter(call => call.url === '/api/answer').length, answerCalls);
 await document.querySelector('[data-tutorial="1"]').trigger();
 await document.querySelector('#close-tutorial').trigger();
 assert.equal(run('JSON.stringify(practice.questions[0].answer)'), savedAnswer);
@@ -167,6 +191,11 @@ assert.match(html, /Your first choice was saved for review/);
 assert.equal(run('practice.questions[0].answer.correct'), 0);
 await document.querySelector('#next-question').trigger();
 assert.match(html, /Question <strong>2<\/strong> of 2/);
+assert.equal(document.querySelector('#translation-dialog').open, false);
+await document.querySelector('#show-translation').trigger();
+assert.match(html, /I ___ studied\. &lt;img src=x onerror=alert\(1\)&gt;/);
+assert.doesNotMatch(html, /<img src=x/);
+await document.querySelector('#close-translation').trigger();
 assert.doesNotMatch(html, /Arbeiten uses haben/);
 assert.equal(document.querySelector('#next-question').disabled, true);
 await document.querySelector('[data-choice="0"]').trigger();
@@ -218,6 +247,11 @@ run("dashboard.units.push({id: 2, title: 'Perfekt mit sein'}); practice = fixtur
 await document.querySelector('[data-tutorial="1"]').trigger();
 assert.match(document.querySelector('#tutorial-content').innerHTML, /Tutorial 1/);
 run('questionIndex = 1; renderPractice()');
+await document.querySelector('#show-translation').trigger();
+assert.equal(document.querySelector('#translation-dialog').open, true);
+assert.match(html, /I ___ studied/);
+assert.equal(run('practice.questions[1].answer'), null);
+await document.querySelector('#close-translation').trigger();
 assert.equal(document.querySelector('#tutorial-dialog').open, false);
 assert.equal(document.querySelector('[data-tutorial="1"]'), null);
 failedTutorials.add(2);
@@ -251,4 +285,4 @@ await stale;
 assert.notEqual(document.querySelector('#tutorial-dialog'), oldDialog);
 assert.equal(document.querySelector('#tutorial-dialog').open, false);
 assert.doesNotMatch(oldContent.innerHTML, /Tutorial 4/);
-console.log('Client state checks passed: overview, feedback, saved choices, explanations, navigation, results, profiles, and optional tutorials including caching, review units, escaping, retry, focus and stale requests.');
+console.log('Client state checks passed: overview, feedback, saved choices, explanations, navigation, results, profiles, translation dialogs, and optional tutorials including caching, review units, escaping, retry, focus and stale requests.');

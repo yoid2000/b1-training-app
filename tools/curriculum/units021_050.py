@@ -1,49 +1,49 @@
 from .core import gaps, meanings, explicit, clauses, LESSONS, question
 
 gaps(21, 'den|dem|der|das|die|einen|einem|einer', """
-Wir gehen durch ___ Park. (der Park)|den
-Sie kauft Blumen für ___ Nachbarin. (die Nachbarin)|die
-Ohne ___ Führerschein darf er nicht fahren. (der Führerschein)|den
-Der Ball fliegt gegen ___ Fenster. (das Fenster)|das
-Wir laufen um ___ Gebäude. (das Gebäude)|das
-Das Geschenk ist für ___ Kollegen. (ein Kollege)|einen
-Sie fährt gegen ___ Baum. (der Baum)|den
-Er kommt ohne ___ Tasche. (die Tasche)|die
-Wir gehen durch ___ Tunnel. (der Tunnel)|den
-Das ist für ___ Kind. (das Kind)|das
-Die Sitzung dauert bis ___ nächsten Freitag. (der Freitag)|den
-Sie kämpfen gegen ___ Lärm. (der Lärm)|den
-Er geht ohne ___ Mantel hinaus. (ein Mantel)|einen
-Wir sitzen um ___ Tisch. (der Tisch)|den
-Die Reise führt durch ___ Schweiz. (die Schweiz)|die
-Ich bezahle für ___ Kaffee. (der Kaffee)|den
-Das Auto fährt gegen ___ Mauer. (eine Mauer)|eine|Gegen requires accusative; feminine eine remains eine.
-Die Gruppe geht um ___ See. (der See)|den
-Ohne ___ Genehmigung geht es nicht. (die Genehmigung)|die
-Wir brauchen Zeit für ___ Gespräch. (das Gespräch)|das
+Wir gehen durch ___ Park. (bestimmter Artikel)|den
+Sie kauft Blumen für ___ Nachbarin. (bestimmter Artikel)|die
+Ohne ___ Führerschein darf er nicht fahren. (bestimmter Artikel)|den
+Der Ball fliegt gegen ___ Fenster. (bestimmter Artikel)|das
+Wir laufen um ___ Gebäude. (bestimmter Artikel)|das
+Das Geschenk ist für ___ Kollegen. (unbestimmter Artikel)|einen
+Sie fährt gegen ___ Baum.|den
+Er kommt ohne ___ Tasche. (bestimmter Artikel)|die
+Wir gehen durch ___ Tunnel. (bestimmter Artikel)|den
+Das ist für ___ Kind. (bestimmter Artikel)|das
+Die Sitzung dauert bis ___ nächsten Freitag. (bestimmter Artikel)|den
+Sie kämpfen gegen ___ Lärm. (bestimmter Artikel)|den
+Er geht ohne ___ Mantel hinaus. (unbestimmter Artikel)|einen
+Wir sitzen um ___ Tisch. (bestimmter Artikel)|den
+Die Reise führt durch ___ Schweiz. (bestimmter Artikel)|die
+Ich bezahle für ___ Kaffee. (bestimmter Artikel)|den
+Das Auto fährt gegen ___ Mauer. (unbestimmter Artikel)|eine|Gegen requires accusative; feminine eine remains eine.
+Die Gruppe geht um ___ See. (bestimmter Artikel)|den
+Ohne ___ Genehmigung geht es nicht. (bestimmter Artikel)|die
+Wir brauchen Zeit für ___ Gespräch. (bestimmter Artikel)|das
 """, "The preposition in this sentence requires accusative; '{answer}' matches the given noun's gender.")
 
 gaps(22, 'dem|der|den|die|das|einem|einer|einen', """
-Sie kommt aus ___ Büro. (das Büro)|dem
-Wir fahren mit ___ Fähre. (die Fähre)|der
-Er wohnt bei ___ Bruder. (der Bruder)|dem
-Ich gehe zu ___ Apotheke. (die Apotheke)|der
-Das Paket ist von ___ Verlag. (der Verlag)|dem
-Seit ___ Ausbildung arbeitet sie hier. (die Ausbildung)|der
-Außer ___ Lehrerin ist niemand da. (die Lehrerin)|der
-Die Bank liegt gegenüber ___ Rathaus. (das Rathaus)|dem
-Nach ___ Essen gehen wir spazieren. (das Essen)|dem
-Wir sprechen mit ___ Gästen. (die Gäste)|den
-Sie fährt zu ___ Eltern. (die Eltern)|den
-Er kommt aus ___ kleinen Dorf. (ein Dorf)|einem
-Bei ___ Prüfung war sie ruhig. (die Prüfung)|der
-Das Hotel liegt ___ Bahnhof gegenüber. (der Bahnhof)|dem
-Ich fahre mit ___ Freund. (ein Freund)|einem
-Seit ___ Woche regnet es. (eine Woche)|einer
-Von ___ Kollegen habe ich viel gelernt. (die Kollegen)|den
-Nach ___ Konzert treffen wir uns. (das Konzert)|dem
-Außer ___ Kind sind alle müde. (das Kind)|dem
-Wir wohnen gegenüber ___ Schule. (die Schule)|der
+Sie kommt aus ___ Büro. (bestimmter Artikel)|dem
+Wir fahren mit ___ Fähre. (bestimmter Artikel)|der
+Er wohnt bei ___ Bruder.|dem
+Ich gehe zu ___ Apotheke. (bestimmter Artikel)|der
+Das Paket ist von ___ Verlag. (bestimmter Artikel)|dem
+Seit ___ Ausbildung arbeitet sie hier. (bestimmter Artikel)|der
+Außer ___ Lehrerin ist niemand da. (bestimmter Artikel)|der
+Die Bank liegt gegenüber ___ Rathaus. (bestimmter Artikel)|dem
+Nach ___ Essen gehen wir spazieren. (bestimmter Artikel)|dem
+Wir sprechen mit ___ Gästen. (bestimmter Artikel)|den
+Sie fährt zu ___ Eltern. (bestimmter Artikel)|den
+Er kommt aus ___ kleinen Dorf. (unbestimmter Artikel)|einem
+Bei ___ Prüfung war sie ruhig. (bestimmter Artikel)|der
+Das Hotel liegt ___ Bahnhof gegenüber.|dem
+Ich fahre mit ___ Freund. (unbestimmter Artikel)|einem
+Seit ___ Woche regnet es. (unbestimmter Artikel)|einer
+Von ___ Kollegen habe ich viel gelernt. (Plural; bestimmter Artikel)|den
+Nach ___ Konzert treffen wir uns. (bestimmter Artikel)|dem
+Außer ___ Kind sind alle müde.|dem
+Wir wohnen gegenüber ___ Schule. (bestimmter Artikel)|der
 """, "This preposition governs dative; '{answer}' is the matching determiner, including with gegenüber after its noun.")
 
 gaps(23, 'seit|vor|in|bis', """
@@ -93,25 +93,25 @@ Der Ausweis wird ___ zehn Jahre ausgestellt. (Gültigkeitsdauer)|für
 """, {'für':'Für marks the intended or agreed duration.', 'bis':'Bis identifies the endpoint; bis zu is used before a determiner such as zum.', 'ab':'Ab marks the starting boundary.', 'seit':'Seit would describe a period continuing from the past.', 'an':'The frame von/vom … an emphasizes the starting point.'})
 
 gaps(25, 'des|der|dem|den|die|das', """
-Während ___ Kurses bleibt das Handy aus. (der Kurs)|des
-Während ___ Prüfung darf man nicht sprechen. (die Prüfung)|der
-Während ___ Gesprächs mache ich Notizen. (das Gespräch)|des
+Während ___ Kurses bleibt das Handy aus.|des
+Während ___ Prüfung darf man nicht sprechen.|der
+Während ___ Gesprächs mache ich Notizen.|des
 Während ___ Ferien ist die Schule leer. (Plural)|der
-Während ___ Vortrags hört er aufmerksam zu. (der Vortrag)|des
-Während ___ Reise lesen wir viel. (die Reise)|der
-Während ___ Essens klingelt das Telefon. (das Essen)|des
+Während ___ Vortrags hört er aufmerksam zu.|des
+Während ___ Reise lesen wir viel.|der
+Während ___ Essens klingelt das Telefon.|des
 Während ___ Arbeiten ist der Weg gesperrt. (Plural)|der
-Während ___ Aufenthalts besuchen wir das Museum. (der Aufenthalt)|des
-Während ___ Ausbildung wohnt sie zu Hause. (die Ausbildung)|der
-Während ___ Festes regnet es. (das Fest)|des
+Während ___ Aufenthalts besuchen wir das Museum.|des
+Während ___ Ausbildung wohnt sie zu Hause.|der
+Während ___ Festes regnet es.|des
 Während ___ Verhandlungen gibt es Kaffee. (Plural)|der
-Während ___ Streiks fahren keine Busse. (der Streik)|des
-Während ___ Beratung stellen wir Fragen. (die Beratung)|der
-Während ___ Gewitters bleiben wir drinnen. (das Gewitter)|des
+Während ___ Streiks fahren keine Busse.|des
+Während ___ Beratung stellen wir Fragen.|der
+Während ___ Gewitters bleiben wir drinnen.|des
 Während ___ Öffnungszeiten ist jemand erreichbar. (Plural)|der
-Während ___ Besuchs sprechen wir Deutsch. (der Besuch)|des
-Während ___ Pause gehe ich hinaus. (die Pause)|der
-Während ___ Spiels bleibt er ruhig. (das Spiel)|des
+Während ___ Besuchs sprechen wir Deutsch.|des
+Während ___ Pause gehe ich hinaus.|der
+Während ___ Spiels bleibt er ruhig.|des
 Während ___ Sitzungen bleibt die Tür zu. (Plural)|der
 """, {'des':'In formal written German, während takes genitive; masculine and neuter singular use des plus the noun ending -(e)s.', 'der':'Während takes genitive here; feminine singular and plural use der.', 'dem':'Dem is dative, not the formal genitive model used here.', 'den':'Den is not the required genitive article.', 'die':'Die is not a genitive article.', 'das':'Das is not a genitive article.'})
 
@@ -427,26 +427,26 @@ Ich bin mit ___ verabredet. (keiner Person; mit Kasusendung)|niemandem
 """, {'jemand':'Jemand is nominative and refers to a person.', 'jemanden':'The explicitly inflected accusative form is jemanden; the verb requires an object in accusative.', 'jemandem':'The explicitly inflected dative form is jemandem.', 'niemand':'Niemand is the nominative subject meaning no one.', 'niemanden':'The explicitly inflected accusative negative person pronoun is niemanden.', 'niemandem':'The explicitly inflected dative negative person pronoun is niemandem.', 'etwas':'Etwas refers to an unspecified thing, rather than a person.', 'nichts':'Nichts means no thing, unlike niemand for no person.'})
 
 gaps(41, 'welcher|welche|welches|welchen|welchem', """
-Hier sind zwei Mäntel. ___ gefällt dir? (der Mantel; Frage)|Welcher|A masculine nominative pronoun is welcher; capitalize the question's first word.
+Hier sind zwei Mäntel. ___ gefällt dir? (Frage)|Welcher|A masculine nominative pronoun is welcher; capitalize the question's first word.
 Du brauchst Stifte? Ich habe ___. (unbestimmte Menge)|welche
-Von den Kleidern: ___ nimmst du? (das Kleid; Akkusativ)|Welches|A neuter accusative question pronoun is welches, capitalized initially.
+Von den Kleidern: ___ nimmst du? (Akkusativ Singular)|Welches|A neuter accusative question pronoun is welches, capitalized initially.
 Es gibt mehrere Busse. Mit ___ fahren wir? (Singular)|welchem
-Von den Taschen: ___ gehört dir? (die Tasche)|Welche|The feminine nominative question form is welche.
-Ich brauche Klebstoff. Hast du ___? (unbestimmte Menge; der Klebstoff)|welchen
+Von den Taschen: ___ gehört dir?|Welche|The feminine nominative question form is welche.
+Ich brauche Klebstoff. Hast du ___? (unbestimmte Menge)|welchen
 Wir brauchen Milch. Hast du ___? (unbestimmte Menge)|welche
-Es gibt mehrere Geräte. ___ funktioniert? (das Gerät; Singular)|Welches|Neuter nominative uses welches.
+Es gibt mehrere Geräte. ___ funktioniert? (Singular)|Welches|Neuter nominative uses welches.
 Die Schuhe sind schön. ___ kaufst du? (Plural)|Welche|Plural accusative uses welche.
 Ich brauche einen Stift. Mit ___ schreibst du? (Singular)|welchem
 Wir suchen Bücher. Hier liegen ___. (einige)|welche
 Hier sind zwei Frauen. Mit ___ hast du gesprochen? (Singular)|welcher
-Es gibt mehrere Züge. ___ fährt zuerst? (der Zug)|Welcher|A masculine nominative standalone pronoun is welcher.
+Es gibt mehrere Züge. ___ fährt zuerst?|Welcher|A masculine nominative standalone pronoun is welcher.
 Ich suche frisches Brot. Hast du ___? (unbestimmte Menge)|welches
 Diese Äpfel sind reif. Ich nehme ___. (einige)|welche
-Hier stehen zwei Wagen. ___ leihst du mir? (der Wagen)|Welchen|Masculine accusative takes welchen.
+Hier stehen zwei Wagen. ___ leihst du mir? (Singular)|Welchen|Masculine accusative takes welchen.
 Das sind die Farben. Mit ___ malst du? (Plural)|welchen
-Es gibt zwei Schulen. ___ besuchst du? (die Schule)|Welche|Feminine accusative uses welche.
+Es gibt zwei Schulen. ___ besuchst du?|Welche|Feminine accusative uses welche.
 Ich habe Papier. Brauchst du ___? (unbestimmte Menge)|welches
-Die Schlüssel liegen dort. ___ ist deiner? (der Schlüssel)|Welcher|The pronoun replaces a masculine nominative noun, so it is welcher.
+Die Schlüssel liegen dort. ___ ist deiner?|Welcher|The pronoun replaces a masculine nominative noun, so it is welcher.
 """, "The standalone form '{answer}' agrees with the omitted noun in gender/number and takes the case required in its own clause.")
 
 gaps(42, 'hätte|hätten|wäre|wären|könnte|könnten|könntest|hättest', """
@@ -569,7 +569,7 @@ Die Stimme ___ Lehrerin ist leise.|der
 Die Rechte ___ Arbeitnehmer sind wichtig. (Plural)|der
 Der Preis ___ Fahrrads ist hoch.|des
 Die Dauer ___ Ausbildung beträgt drei Jahre.|der
-Der Garten ___ Nachbarn ist groß. (ein Nachbar)|des
+Der Garten ___ Nachbarn ist groß.|des
 Die Meinung ___ Eltern ist klar.|der
 Die Adresse ___ Hotels steht hier.|des
 Der Inhalt ___ Tasche ist nass.|der
@@ -577,24 +577,24 @@ Die Ergebnisse ___ Prüfungen kommen morgen. (Plural)|der
 """, {'des':'Masculine/neuter genitive singular uses des; regular masculine/neuter nouns add -(e)s, while weak nouns such as Nachbar take -n.', 'der':'Feminine singular and plural genitive use der; the following noun does not add a new genitive -s.', 'dem':'Dem marks dative, not possession in this genitive noun phrase.', 'den':'Den is not the genitive article required here.', 'die':'Die is not the required genitive article.', 'das':'Das is not the required genitive article.'})
 
 gaps(50, 'des|der|dem|den|die|das|einer|einem|einen', """
-Innerhalb ___ Woche bekommen Sie Bescheid. (eine Woche)|einer
-Außerhalb ___ Stadt ist es ruhiger. (die Stadt)|der
-Statt ___ Originals schicken wir eine Kopie. (das Original)|des
-Anstatt ___ Autos nehmen wir das Rad. (das Auto)|des
-Innerhalb ___ Gebäudes gilt Rauchverbot. (das Gebäude)|des
+Innerhalb ___ Woche bekommen Sie Bescheid. (unbestimmter Artikel)|einer
+Außerhalb ___ Stadt ist es ruhiger. (bestimmter Artikel)|der
+Statt ___ Originals schicken wir eine Kopie. (bestimmter Artikel)|des
+Anstatt ___ Autos nehmen wir das Rad. (bestimmter Artikel)|des
+Innerhalb ___ Gebäudes gilt Rauchverbot. (bestimmter Artikel)|des
 Außerhalb ___ Öffnungszeiten ist geschlossen. (Plural)|der
-Statt ___ Rechnung bekam ich eine Mahnung. (die Rechnung)|der
-Innerhalb ___ Monats muss es fertig sein. (der Monat)|des
-Außerhalb ___ Geländes darf man parken. (das Gelände)|des
-Anstatt ___ Lehrerin kommt der Leiter. (die Lehrerin)|der
+Statt ___ Rechnung bekam ich eine Mahnung. (bestimmter Artikel)|der
+Innerhalb ___ Monats muss es fertig sein. (bestimmter Artikel)|des
+Außerhalb ___ Geländes darf man parken. (bestimmter Artikel)|des
+Anstatt ___ Lehrerin kommt der Leiter. (bestimmter Artikel)|der
 Innerhalb ___ Grenzen gilt das Gesetz. (Plural)|der
-Außerhalb ___ Arbeitszeit bin ich nicht erreichbar. (die Arbeitszeit)|der
-Statt ___ Briefes schreibe ich eine E-Mail. (der Brief)|des
-Innerhalb ___ Frist zahlen wir. (die Frist)|der
-Außerhalb ___ Dorfes liegt ein See. (das Dorf)|des
-Anstatt ___ Vertrags bekam sie ein Angebot. (der Vertrag)|des
-Innerhalb ___ Jahres änderte sich alles. (das Jahr)|des
-Außerhalb ___ Schule wartet die Gruppe. (die Schule)|der
+Außerhalb ___ Arbeitszeit bin ich nicht erreichbar. (bestimmter Artikel)|der
+Statt ___ Briefes schreibe ich eine E-Mail. (bestimmter Artikel)|des
+Innerhalb ___ Frist zahlen wir. (bestimmter Artikel)|der
+Außerhalb ___ Dorfes liegt ein See.|des
+Anstatt ___ Vertrags bekam sie ein Angebot. (bestimmter Artikel)|des
+Innerhalb ___ Jahres änderte sich alles. (bestimmter Artikel)|des
+Außerhalb ___ Schule wartet die Gruppe.|der
 Statt ___ Geschenke sammeln wir Geld. (Plural)|der
-Innerhalb ___ Stunde ist er da. (eine Stunde)|einer
+Innerhalb ___ Stunde ist er da. (unbestimmter Artikel)|einer
 """, "The formal written model uses genitive after this preposition; '{answer}' matches the noun's gender and number.")

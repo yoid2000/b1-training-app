@@ -238,7 +238,7 @@ meanings(168,"""
 Ich bin auf der Bank gesessen. (südliche Standardvarietät)|south
 Ich habe auf der Bank gesessen.|general
 Das Joghurt steht im Kühlschrank. (österreichisch/schweizerisch)|gender
-Ich fahre mit den Zug. (gemeint: der Zug, Singular)|caseerror
+Ich fahre mit den Zug. (Singular)|caseerror
 Er ist lange im Flur gestanden. (südliche Standardvarietät)|south
 Er hat lange im Flur gestanden.|general
 Der Joghurt steht im Kühlschrank.|gender

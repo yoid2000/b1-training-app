@@ -12,7 +12,7 @@ from unittest.mock import patch
 from urllib.error import HTTPError
 from urllib.request import build_opener, HTTPCookieProcessor, Request
 
-from app import CATALOG, QUESTIONS, QUESTION_BANK, TUTORIALS, UNIT_DETAILS, Store, create_server
+from app import CATALOG, QUESTIONS, QUESTION_BANK, TRANSLATIONS, TUTORIALS, UNIT_DETAILS, Store, create_server
 
 
 class Client:
@@ -112,6 +112,23 @@ class AppTests(unittest.TestCase):
         self.assertFalse(resumed["questions"][0]["answer"]["correct"])
         self.assertIn("explanation", resumed["questions"][0])
         self.assertIn("correct_index", resumed["questions"][0])
+
+    def test_translations_in_practice_and_review_preserve_progress(self):
+        practice = self.start(self.alice)
+        before = self.alice.get("me")
+        for question in practice["questions"]:
+            self.assertEqual(question["translation_en"], TRANSLATIONS[question["id"]]["en"])
+            self.assertIsNone(question["answer"])
+            self.assertNotIn("correct_index", question)
+            self.assertNotIn("explanation", question)
+        self.assertEqual(self.alice.get("me"), before)
+        self.answer(self.alice, practice, practice["questions"][0], False)
+        review = self.start(self.alice, mode="review")
+        before = self.alice.get("me")
+        loaded = self.alice.get("practice/" + review["id"])
+        self.assertEqual(loaded["questions"][0]["translation_en"], practice["questions"][0]["translation_en"])
+        self.assertIsNone(loaded["questions"][0]["answer"])
+        self.assertEqual(self.alice.get("me"), before)
 
     def test_sequential_unlock_completion_and_retake(self):
         status, _, _ = self.alice.request("/api/start", {"unit_id": 2})
@@ -251,6 +268,15 @@ class AppTests(unittest.TestCase):
 
 
 class ContentTests(unittest.TestCase):
+    def test_translations_cover_current_questions_and_preserve_blanks(self):
+        self.assertEqual(set(TRANSLATIONS), set(QUESTIONS))
+        for qid, question in QUESTIONS.items():
+            translation = TRANSLATIONS[qid]
+            self.assertEqual(translation["de"], question["prompt"])
+            self.assertTrue(translation["en"].strip(), qid)
+            self.assertEqual(translation["en"].count("___"), question["prompt"].count("___"), qid)
+            self.assertNotIn("XYZ", translation["en"], qid)
+
     def test_all_tutorials_are_complete_and_individual(self):
         self.assertEqual(sorted(TUTORIALS), list(range(1, 171)))
         seen = set()
@@ -312,10 +338,10 @@ class ContentTests(unittest.TestCase):
             # Correct answer placement should not turn into a fixed-letter exercise.
             self.assertEqual({q["correct_index"] for q in questions}, {0, 1, 2, 3})
 
-    def test_original_questions_are_unchanged(self):
+    def test_original_questions_match_reviewed_content(self):
         original = {i: QUESTION_BANK[i] for i in range(1, 21)}
         digest = hashlib.sha256(json.dumps(original, ensure_ascii=False, sort_keys=True).encode("utf-8")).hexdigest()
-        self.assertEqual(digest, "9dffc34f92b2dfa27d9de19f727c791e2dcf47bcebddbe2fcc1879dc0771808a")
+        self.assertEqual(digest, "4526706e3e0ea10024e7d0ec5af943711bb6ef5c534c9a6f1550fa346c2e7a20")
 
     def test_new_questions_are_complete_and_not_repeated_in_a_unit(self):
         for unit_id in range(21, 171):

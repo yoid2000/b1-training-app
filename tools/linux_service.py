@@ -94,7 +94,7 @@ def prepare(host, port, output, import_db):
     host = host or old.get('host', '0.0.0.0')
     if not isinstance(ipaddress.ip_address(host), ipaddress.IPv4Address):
         raise ValueError('Use an IPv4 bind address; the app currently serves IPv4.')
-    port = int(port or old.get('port', 8000))
+    port = int(port or old.get('port', 8188))
     if not 1024 <= port <= 65535:
         raise ValueError('Choose an unprivileged port from 1024 through 65535.')
     if DATA_DIR.exists() and DATA_DIR.stat().st_uid != uid:

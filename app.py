@@ -20,6 +20,12 @@ UNITS = {unit["id"]: unit for unit in CATALOG}
 for unit_id, (title, goal_en, goal_de) in UNIT_DETAILS.items():
     UNITS[unit_id].update(title=title, goal_en=goal_en, goal_de=goal_de)
 QUESTIONS = {q["id"]: q for questions in QUESTION_BANK.values() for q in questions}
+TRANSLATIONS = json.loads((ROOT / "data" / "question_translations.json").read_text(encoding="utf-8"))
+if set(TRANSLATIONS) != set(QUESTIONS) or any(
+    t["de"] != QUESTIONS[qid]["prompt"] or not isinstance(t["en"], str) or not t["en"].strip()
+    for qid, t in TRANSLATIONS.items()
+):
+    raise ValueError("Every question must have an English translation matching its current prompt.")
 TUTORIALS = {tutorial["unit_id"]: tutorial for tutorial in json.loads(
     (ROOT / "data" / "tutorials.json").read_text(encoding="utf-8"))}
 if set(TUTORIALS) != set(UNITS):
@@ -164,6 +170,7 @@ class Store:
         for qid in json.loads(row["question_ids"]):
             q = QUESTIONS[qid]
             public = {k: q[k] for k in ("id", "prompt", "options", "instruction", "unit_id")}
+            public["translation_en"] = TRANSLATIONS[qid]["en"]
             public["answer"] = answers.get(qid)
             if qid in answers:
                 public.update(correct_index=q["correct_index"], explanation=q["explanation"])
@@ -351,7 +358,7 @@ class Handler(BaseHTTPRequestHandler):
             self.reply(500, {"error": "Something went wrong. Please try again."})
 
 
-def create_server(host="0.0.0.0", port=8000, database=None):
+def create_server(host="0.0.0.0", port=8188, database=None):
     path = Path(database) if database else ROOT / "instance" / "practice.sqlite3"
     path.parent.mkdir(parents=True, exist_ok=True)
     server = ThreadingHTTPServer((host, port), Handler)
@@ -363,7 +370,7 @@ def create_server(host="0.0.0.0", port=8000, database=None):
 def main():
     parser = argparse.ArgumentParser(description="Offline German B1 practice for a trusted local network.")
     parser.add_argument("--host", default="0.0.0.0")
-    parser.add_argument("--port", type=int, default=8000)
+    parser.add_argument("--port", type=int, default=8188)
     parser.add_argument("--database", type=Path)
     args = parser.parse_args()
     server = create_server(args.host, args.port, args.database)

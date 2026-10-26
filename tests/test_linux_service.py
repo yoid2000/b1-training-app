@@ -116,7 +116,7 @@ class LinuxServiceTests(unittest.TestCase):
             service.prepare('0.0.0.0', '9000', output, '')
             config = json.loads((output / 'config.json').read_text(encoding='utf-8'))
             self.assertEqual((config['host'], config['port']), ('0.0.0.0', 9000))
-            for host, port in (('::1', '8000'), ('invalid', '8000'), ('0.0.0.0', '80'), ('0.0.0.0', '65536')):
+            for host, port in (('::1', '8188'), ('invalid', '8188'), ('0.0.0.0', '80'), ('0.0.0.0', '65536')):
                 with self.subTest(host=host, port=port), self.assertRaises(ValueError):
                     service.prepare(host, port, output, '')
             with self.assertRaises(ValueError):
@@ -124,7 +124,7 @@ class LinuxServiceTests(unittest.TestCase):
 
     def test_unit_runs_unprivileged_with_persistent_state_and_boot_start(self):
         config = {'repo': '/home/paul/apps/b1-training-app', 'python': '/usr/bin/python3',
-                  'uid': 1000, 'gid': 1001, 'host': '0.0.0.0', 'port': 8000}
+                  'uid': 1000, 'gid': 1001, 'host': '0.0.0.0', 'port': 8188}
         with patch.object(service, 'DATABASE', Path('/var/lib/b1-training-app/practice.sqlite3')):
             unit = service.render_unit(config)
         for setting in ('User=1000', 'Group=1001', 'WantedBy=multi-user.target', 'Restart=on-failure',

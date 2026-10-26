@@ -233,26 +233,26 @@ Welche Erzählung steht im Präteritum? | Sie kam später und sagte Bescheid. | 
 """)
 
 add(9, """
-Wir fahren mit ___ Fähre. (die Fähre) | der | dem | den | die | Mit requires dative; the feminine article die becomes der.
-Der Fahrplan hängt neben ___ Eingang. (der Eingang; Ort) | dem | den | der | das | A fixed location after neben takes dative; masculine der becomes dem.
+Wir fahren mit ___ Fähre. | der | dem | den | die | Mit requires dative; the feminine article die becomes der.
+Der Fahrplan hängt neben ___ Eingang. (Ort) | dem | den | der | das | A fixed location after neben takes dative; masculine der becomes dem.
 Ich spreche mit ___ Kindern. | den | die | dem | der | The dative plural article is den; Kindern already includes the dative -n.
-Die Erlaubnis liegt bei ___ Chef. (der Chef) | dem | den | die | das | Bei requires dative; masculine der becomes dem.
-Sie arbeitet in ___ Fabrik. (die Fabrik) | der | die | dem | den | A fixed workplace after in takes dative; feminine die becomes der.
-Wir sitzen vor ___ Fenster. (das Fenster) | dem | das | den | der | A location after vor takes dative; neuter das becomes dem.
-Ich fahre mit den ___. (der Bus; Plural) | Bussen | Busse | Bus | Busses | The plural Busse gains -n in the dative: mit den Bussen.
-Er spricht mit den ___. (der Mitarbeiter; Plural) | Mitarbeitern | Mitarbeiter | Mitarbeiters | Mitarbeiteren | Plural Mitarbeiter gains the dative ending -n.
-Sie fährt mit den ___. (das Auto; Plural) | Autos | Auton | Autosen | Auto | Plurals already ending in -s do not add a dative -n.
-Wir helfen den ___. (die Frau; Plural) | Frauen | Fraun | Frauens | Frau | Frauen already ends in -n, so no additional dative ending is added.
-Die Unterlagen sind in ___ Büro. (das Büro; Ort) | dem | den | der | die | In describes a location here, so the neuter dative article is dem.
-Ich fahre zu ___ Ausstellung. (die Ausstellung) | der | dem | den | die | Zu always requires dative, so die Ausstellung becomes der Ausstellung.
+Die Erlaubnis liegt bei ___ Chef. | dem | den | die | das | Bei requires dative; masculine der becomes dem.
+Sie arbeitet in ___ Fabrik. | der | die | dem | den | A fixed workplace after in takes dative; feminine die becomes der.
+Wir sitzen vor ___ Fenster. | dem | das | den | der | A location after vor takes dative; neuter das becomes dem.
+Ich fahre mit den ___. (Bus; Plural) | Bussen | Busse | Bus | Busses | The plural Busse gains -n in the dative: mit den Bussen.
+Er spricht mit den ___. (Mitarbeiter; Plural) | Mitarbeitern | Mitarbeiter | Mitarbeiters | Mitarbeiteren | Plural Mitarbeiter gains the dative ending -n.
+Sie fährt mit den ___. (Auto; Plural) | Autos | Auton | Autosen | Auto | Plurals already ending in -s do not add a dative -n.
+Wir helfen den ___. (Frau; Plural) | Frauen | Fraun | Frauens | Frau | Frauen already ends in -n, so no additional dative ending is added.
+Die Unterlagen sind in ___ Büro. (Ort) | dem | den | der | die | In describes a location here, so the neuter dative article is dem.
+Ich fahre zu ___ Ausstellung. | der | dem | den | die | Zu always requires dative, so die Ausstellung becomes der Ausstellung.
 Sie wohnt bei ___ Eltern. (Plural) | den | die | dem | der | Bei takes dative; plural Eltern takes den and already ends in -n.
-Mit ___ Ermäßigung ist die Fahrt günstiger. (eine Ermäßigung) | einer | eine | einem | einen | The feminine dative form of eine is einer.
-Er fährt mit ___ Fahrrad. (ein Fahrrad) | einem | einen | einer | ein | Fahrrad is neuter; ein becomes einem in the dative.
-Wir sprechen mit ___ Freund. (ein Freund) | einem | einen | einer | eines | Freund is masculine and takes einem after mit.
-Der Export hilft den ___. (das Unternehmen; Plural) | Unternehmen | Unternehmenn | Unternehmens | Unternehme | Unternehmen already ends in -n in the plural, so dative does not add another ending.
-Sie erzählt von ___ Erfahrung. (eine Erfahrung) | einer | einen | einem | eine | Von requires dative; the feminine phrase is von einer Erfahrung.
-Ich warte gegenüber ___ Apotheke. (die Apotheke) | der | die | den | dem | Gegenüber requires dative, so the feminine article is der.
-Wir gehen mit den ___ zum Bahnhof. (der Freund; Plural) | Freunden | Freunde | Freund | Freunds | Freunde gains -n in the dative plural: den Freunden.
+Mit ___ Ermäßigung ist die Fahrt günstiger. | einer | eine | einem | einen | The feminine dative form of eine is einer.
+Er fährt mit ___ Fahrrad. | einem | einen | einer | ein | Fahrrad is neuter; ein becomes einem in the dative.
+Wir sprechen mit ___ Freund. | einem | einen | einer | eines | Freund is masculine and takes einem after mit.
+Der Export hilft den ___. (Unternehmen; Plural) | Unternehmen | Unternehmenn | Unternehmens | Unternehme | Unternehmen already ends in -n in the plural, so dative does not add another ending.
+Sie erzählt von ___ Erfahrung. | einer | einen | einem | eine | Von requires dative; the feminine phrase is von einer Erfahrung.
+Ich warte gegenüber ___ Apotheke. | der | die | den | dem | Gegenüber requires dative, so the feminine article is der.
+Wir gehen mit den ___ zum Bahnhof. (Freund; Plural) | Freunden | Freunde | Freund | Freunds | Freunde gains -n in the dative plural: den Freunden.
 """)
 
 add(10, """
@@ -272,7 +272,7 @@ Die Kinder widersprechen ___ Lehrer. | dem | den | der | das | Widersprechen tak
 Die Einführung hilft ___ Teilnehmern. | den | die | dem | der | Helfen takes dative; the plural phrase is den Teilnehmern.
 Der Rock steht ___ Frau gut. | der | die | dem | den | Stehen meaning to suit someone takes a dative person: der Frau.
 Die Blumen gefallen ___ Eltern. | den | die | dem | der | Gefallen takes dative; Eltern is plural, so use den.
-Ich antworte ___ Nachbarn. (Singular: der Nachbar) | dem | den | die | das | Antworten takes dative; the singular masculine phrase is dem Nachbarn.
+Ich antworte ___ Nachbarn. (Singular) | dem | den | die | das | Antworten takes dative; the singular masculine phrase is dem Nachbarn.
 Das Feuerzeug gehört ___ Kollegen. (Plural) | den | die | dem | der | Gehören takes dative; a plural owner takes den Kollegen.
 Der Hund folgt ___ Frau bis zur Tür. | der | die | dem | den | Folgen takes dative regardless of the later destination phrase.
 Welche Ergänzung passt zu zuhören? | dem Kind | das Kind | den Kind | der Kind | Zuhören requires dative; das Kind becomes dem Kind.
@@ -302,49 +302,49 @@ Das ist unsere Lehrerin. Wir hören ___ zu. | ihr | sie | ihm | ihnen | A singul
 """)
 
 add(12, """
-Sie erklärt ___ Kunden den Unterschied. (der Kunde) | dem | den | der | das | The recipient of an explanation is dative: dem Kunden; the difference is accusative.
-Ich gebe dem Mann ___ Schlüssel. (der Schlüssel) | den | dem | der | des | The transferred thing is accusative; der Schlüssel becomes den Schlüssel.
-Wir schicken ___ Schwester ein Paket. (die Schwester) | der | die | den | dem | The recipient takes dative, so use der Schwester.
-Er zeigt dem Kind ___ Garten. (der Garten) | den | dem | der | des | The thing shown is accusative: den Garten.
-Sie schenkt ___ Freund eine Geldbörse. (ein Freund) | einem | einen | einer | eines | The friend receives the gift and takes the dative einem Freund.
-Ich bringe der Kollegin ___ Gabel. (eine Gabel) | eine | einer | einem | einen | The item brought is accusative; feminine eine stays eine.
-Wir leihen ___ Nachbarn das Auto. (die Nachbarn; Plural) | den | die | dem | der | The borrowers are dative plural: den Nachbarn.
-Er gibt dem Kind ___ Ball. (ein Ball) | einen | einem | einer | ein | Ball is masculine; the transferred object takes accusative einen.
-Ich erkläre ___ Frau die Garantie. (die Frau) | der | die | dem | den | The person receiving an explanation takes dative: der Frau.
-Die Mitarbeiterin nennt dem Kunden ___ Preis. (der Preis) | den | dem | der | des | The price named is the accusative object: den Preis.
-Sie bietet ___ Gästen einen Kaffee an. (die Gäste) | den | die | dem | der | The people receiving an offer are dative plural: den Gästen.
-Ich empfehle dem Freund ___ Film. (ein Film) | einen | einem | einer | eines | The recommended thing is accusative, so masculine ein becomes einen.
-Wir erzählen ___ Kindern eine Geschichte. (die Kinder) | den | die | dem | der | The listeners are dative plural: den Kindern.
-Er verspricht der Frau ___ Besuch. (ein Besuch) | einen | einem | einer | eines | The promised visit is the accusative object: einen Besuch.
-Ich reiche ___ Kollegin das Formular. (die Kollegin) | der | die | dem | den | The recipient is dative; feminine die becomes der.
-Sie verkauft dem Mann ___ Wagen. (der Wagen) | den | dem | der | des | The thing sold takes accusative: den Wagen.
-Wir schicken dem Fundbüro ___ Brief. (ein Brief) | einen | einem | einer | eines | The letter is the accusative thing sent; the office is the dative recipient.
-Er bringt ___ Kind die Tasche. (das Kind) | dem | das | den | der | The child is the recipient and takes neuter dative dem.
+Sie erklärt ___ Kunden den Unterschied. (Singular) | dem | den | der | das | The recipient of an explanation is dative: dem Kunden; the difference is accusative.
+Ich gebe dem Mann ___ Schlüssel. | den | dem | der | des | The transferred thing is accusative; der Schlüssel becomes den Schlüssel.
+Wir schicken ___ Schwester ein Paket. | der | die | den | dem | The recipient takes dative, so use der Schwester.
+Er zeigt dem Kind ___ Garten. | den | dem | der | des | The thing shown is accusative: den Garten.
+Sie schenkt ___ Freund eine Geldbörse. | einem | einen | einer | eines | The friend receives the gift and takes the dative einem Freund.
+Ich bringe der Kollegin ___ Gabel. | eine | einer | einem | einen | The item brought is accusative; feminine eine stays eine.
+Wir leihen ___ Nachbarn das Auto. (Plural) | den | die | dem | der | The borrowers are dative plural: den Nachbarn.
+Er gibt dem Kind ___ Ball. | einen | einem | einer | ein | Ball is masculine; the transferred object takes accusative einen.
+Ich erkläre ___ Frau die Garantie. | der | die | dem | den | The person receiving an explanation takes dative: der Frau.
+Die Mitarbeiterin nennt dem Kunden ___ Preis. | den | dem | der | des | The price named is the accusative object: den Preis.
+Sie bietet ___ Gästen einen Kaffee an. | den | die | dem | der | The people receiving an offer are dative plural: den Gästen.
+Ich empfehle dem Freund ___ Film. | einen | einem | einer | eines | The recommended thing is accusative, so masculine ein becomes einen.
+Wir erzählen ___ Kindern eine Geschichte. | den | die | dem | der | The listeners are dative plural: den Kindern.
+Er verspricht der Frau ___ Besuch. | einen | einem | einer | eines | The promised visit is the accusative object: einen Besuch.
+Ich reiche ___ Kollegin das Formular. | der | die | dem | den | The recipient is dative; feminine die becomes der.
+Sie verkauft dem Mann ___ Wagen. | den | dem | der | des | The thing sold takes accusative: den Wagen.
+Wir schicken dem Fundbüro ___ Brief. | einen | einem | einer | eines | The letter is the accusative thing sent; the office is the dative recipient.
+Er bringt ___ Kind die Tasche. | dem | das | den | der | The child is the recipient and takes neuter dative dem.
 Ich wünsche der Nachbarin ___ schönen Abend. | einen | einem | einer | eines | The thing wished is accusative; masculine Abend takes einen.
 Wer bekommt etwas? In: Sie gibt dem Mann den Schlüssel. | dem Mann | den Schlüssel | Sie | gibt | Dem Mann is the dative recipient; den Schlüssel is the accusative object being given.
 """)
 
 add(13, """
-Ich gebe ___. (der Mann + das Buch) | dem Mann das Buch | das Buch dem Mann | der Mann das Buch | dem Mann dem Buch | In neutral order, a full dative noun phrase precedes a full accusative noun phrase.
-Sie schickt ___. (die Frau + der Brief) | der Frau den Brief | den Brief der Frau | die Frau den Brief | der Frau dem Brief | With two full noun objects, neutral order places dative der Frau before accusative den Brief.
-Wir zeigen ___. (das Kind + der Garten) | dem Kind den Garten | den Garten dem Kind | das Kind den Garten | dem Kind dem Garten | Neutral noun-object order is recipient in dative, then thing in accusative.
+Ich gebe ___. (Mann + Buch) | dem Mann das Buch | das Buch dem Mann | der Mann das Buch | dem Mann dem Buch | In neutral order, a full dative noun phrase precedes a full accusative noun phrase.
+Sie schickt ___. (Frau + Brief) | der Frau den Brief | den Brief der Frau | die Frau den Brief | der Frau dem Brief | With two full noun objects, neutral order places dative der Frau before accusative den Brief.
+Wir zeigen ___. (Kind + Garten) | dem Kind den Garten | den Garten dem Kind | das Kind den Garten | dem Kind dem Garten | Neutral noun-object order is recipient in dative, then thing in accusative.
 Ich gebe ___. (es + ihm) | es ihm | ihm es | er ihm | es ihn | Two unstressed personal pronouns normally put accusative es before dative ihm.
 Sie schickt ___. (ihn + ihr) | ihn ihr | ihr ihn | er ihr | ihn sie | With two unstressed pronouns, accusative ihn precedes dative ihr.
 Wir erklären ___. (es + ihnen) | es ihnen | ihnen es | es sie | er ihnen | The accusative pronoun es comes before the dative pronoun ihnen in neutral order.
-Ich gebe ___. (ihm + das Buch) | ihm das Buch | das Buch ihm | ihn das Buch | ihm dem Buch | A personal pronoun normally comes before a full noun object; the recipient is ihm.
-Sie schickt ___. (ihn + die Frau) | ihn der Frau | der Frau ihn | ihm die Frau | ihn die Frau | A pronoun precedes a full noun object, so accusative ihn comes before dative der Frau.
-Wir zeigen ___. (es + das Kind) | es dem Kind | dem Kind es | es das Kind | ihm das Kind | The accusative pronoun es normally precedes the dative noun phrase dem Kind.
-Er leiht ___. (die Nachbarin + der Wagen) | der Nachbarin den Wagen | den Wagen der Nachbarin | die Nachbarin den Wagen | der Nachbarin dem Wagen | Two noun objects usually put the dative recipient before the accusative thing.
-Ich bringe ___. (sie + dir; die Tasche) | sie dir | dir sie | ihr dich | sie dich | Die Tasche becomes accusative sie, which precedes dative dir with two pronouns.
+Ich gebe ___. (ihm + Buch) | ihm das Buch | das Buch ihm | ihn das Buch | ihm dem Buch | A personal pronoun normally comes before a full noun object; the recipient is ihm.
+Sie schickt ___. (ihn + Frau) | ihn der Frau | der Frau ihn | ihm die Frau | ihn die Frau | A pronoun precedes a full noun object, so accusative ihn comes before dative der Frau.
+Wir zeigen ___. (es + Kind) | es dem Kind | dem Kind es | es das Kind | ihm das Kind | The accusative pronoun es normally precedes the dative noun phrase dem Kind.
+Er leiht ___. (Nachbarin + Wagen) | der Nachbarin den Wagen | den Wagen der Nachbarin | die Nachbarin den Wagen | der Nachbarin dem Wagen | Two noun objects usually put the dative recipient before the accusative thing.
+Ich bringe ___. (sie + dir; Tasche) | sie dir | dir sie | ihr dich | sie dich | Die Tasche becomes accusative sie, which precedes dative dir with two pronouns.
 Sie schenkt ___. (es + uns) | es uns | uns es | er uns | es wir | Two unstressed pronouns use accusative-before-dative order: es uns.
-Wir geben ___. (sie + euch; die Schlüssel) | sie euch | euch sie | ihnen ihr | sie ihr | The plural keys become accusative sie and come before dative euch.
-Er erklärt ___. (mir + die Regel) | mir die Regel | die Regel mir | mich die Regel | mir der Regel | A dative pronoun normally precedes the full accusative noun phrase.
-Ich erzähle ___. (die Kinder + die Geschichte) | den Kindern die Geschichte | die Geschichte den Kindern | die Kinder die Geschichte | den Kindern der Geschichte | In neutral order, the dative noun phrase den Kindern precedes the accusative story.
-Sie verkauft ___. (ihn + der Kunde; der Wagen) | ihn dem Kunden | dem Kunden ihn | ihm den Kunden | ihn den Kunden | Accusative ihn, referring to the car, comes before the full dative recipient.
-Wir empfehlen ___. (ihn + Ihnen; der Film) | ihn Ihnen | Ihnen ihn | er Ihnen | ihn Sie | With two unstressed pronouns, accusative ihn comes before formal dative Ihnen.
-Ich reiche ___. (dir + das Formular) | dir das Formular | das Formular dir | dich das Formular | dir dem Formular | The dative pronoun dir normally precedes the full accusative noun phrase.
-Sie bringt ___. (sie + ihm; die Gabel) | sie ihm | ihm sie | ihr ihn | sie ihn | Accusative sie, referring to the fork, precedes the dative pronoun ihm.
-Er zeigt ___. (die Gäste + die Wohnung) | den Gästen die Wohnung | die Wohnung den Gästen | die Gäste die Wohnung | den Gästen der Wohnung | For two full noun phrases, the neutral pattern is dative den Gästen then accusative die Wohnung.
+Wir geben ___. (sie + euch; Schlüssel) | sie euch | euch sie | ihnen ihr | sie ihr | The plural keys become accusative sie and come before dative euch.
+Er erklärt ___. (mir + Regel) | mir die Regel | die Regel mir | mich die Regel | mir der Regel | A dative pronoun normally precedes the full accusative noun phrase.
+Ich erzähle ___. (Kinder + Geschichte) | den Kindern die Geschichte | die Geschichte den Kindern | die Kinder die Geschichte | den Kindern der Geschichte | In neutral order, the dative noun phrase den Kindern precedes the accusative story.
+Sie verkauft ___. (ihn + Kunde; Wagen) | ihn dem Kunden | dem Kunden ihn | ihm den Kunden | ihn den Kunden | Accusative ihn, referring to the car, comes before the full dative recipient.
+Wir empfehlen ___. (ihn + Ihnen; Film) | ihn Ihnen | Ihnen ihn | er Ihnen | ihn Sie | With two unstressed pronouns, accusative ihn comes before formal dative Ihnen.
+Ich reiche ___. (dir + Formular) | dir das Formular | das Formular dir | dich das Formular | dir dem Formular | The dative pronoun dir normally precedes the full accusative noun phrase.
+Sie bringt ___. (sie + ihm; Gabel) | sie ihm | ihm sie | ihr ihn | sie ihn | Accusative sie, referring to the fork, precedes the dative pronoun ihm.
+Er zeigt ___. (Gäste + Wohnung) | den Gästen die Wohnung | die Wohnung den Gästen | die Gäste die Wohnung | den Gästen der Wohnung | For two full noun phrases, the neutral pattern is dative den Gästen then accusative die Wohnung.
 """, "Choose the usual neutral order. Personal pronouns are unstressed.")
 
 add(14, """
@@ -440,26 +440,26 @@ Die Nachbarn streiten ___. (mit + einander) | miteinander | füreinander | vonei
 """)
 
 add(18, """
-Die Kamera liegt auf ___ Tisch. (der Tisch) | dem | den | der | das | Liegen gives a location, so auf takes dative dem Tisch.
-Ich lege die Kamera auf ___ Tisch. (der Tisch) | den | dem | der | das | Placing the camera onto a destination uses accusative den Tisch.
-Die Katze schläft unter ___ Brücke. (die Brücke) | der | die | dem | den | The cat's location after unter takes dative der Brücke.
-Die Katze läuft unter ___ Brücke und bleibt dort. (die Brücke) | die | der | dem | den | The bridge is the destination of the movement, so use accusative die Brücke.
-Die Kanne steht neben ___ Fenster. (das Fenster) | dem | das | den | der | A position next to the window uses dative dem Fenster.
-Ich stelle die Kanne neben ___ Fenster. (das Fenster) | das | dem | den | der | A new destination after neben takes accusative das Fenster.
-Die Kette hängt an ___ Wand. (die Wand) | der | die | dem | den | Hanging in a fixed position uses dative der Wand.
-Ich hänge die Kette an ___ Wand. (die Wand) | die | der | dem | den | Placing the chain onto the wall uses accusative die Wand.
-Der Kassettenrekorder steht hinter ___ Sofa. (das Sofa) | dem | das | den | der | A location behind the sofa requires dative dem Sofa.
-Ich stelle den Rekorder hinter ___ Sofa. (das Sofa) | das | dem | den | der | Moving the recorder to a destination uses accusative das Sofa.
-Die Lampe hängt über ___ Tisch. (der Tisch) | dem | den | der | das | The lamp's position above the table takes dative dem Tisch.
-Wir hängen die Lampe über ___ Tisch. (der Tisch) | den | dem | der | das | Hanging the lamp into a new position uses accusative den Tisch.
-Der Hund sitzt vor ___ Tür. (die Tür) | der | die | dem | den | Sitting in a place uses dative der Tür.
-Der Hund setzt sich vor ___ Tür. (die Tür) | die | der | dem | den | Sitting down in a new position gives a destination and accusative die Tür.
-Die Schlüssel liegen zwischen ___ Büchern. (die Bücher) | den | die | dem | der | A location between plural objects uses dative den Büchern.
+Die Kamera liegt auf ___ Tisch. | dem | den | der | das | Liegen gives a location, so auf takes dative dem Tisch.
+Ich lege die Kamera auf ___ Tisch. | den | dem | der | das | Placing the camera onto a destination uses accusative den Tisch.
+Die Katze schläft unter ___ Brücke. | der | die | dem | den | The cat's location after unter takes dative der Brücke.
+Die Katze läuft unter ___ Brücke und bleibt dort. | die | der | dem | den | The bridge is the destination of the movement, so use accusative die Brücke.
+Die Kanne steht neben ___ Fenster. | dem | das | den | der | A position next to the window uses dative dem Fenster.
+Ich stelle die Kanne neben ___ Fenster. | das | dem | den | der | A new destination after neben takes accusative das Fenster.
+Die Kette hängt an ___ Wand. | der | die | dem | den | Hanging in a fixed position uses dative der Wand.
+Ich hänge die Kette an ___ Wand. | die | der | dem | den | Placing the chain onto the wall uses accusative die Wand.
+Der Kassettenrekorder steht hinter ___ Sofa. | dem | das | den | der | A location behind the sofa requires dative dem Sofa.
+Ich stelle den Rekorder hinter ___ Sofa. | das | dem | den | der | Moving the recorder to a destination uses accusative das Sofa.
+Die Lampe hängt über ___ Tisch. | dem | den | der | das | The lamp's position above the table takes dative dem Tisch.
+Wir hängen die Lampe über ___ Tisch. | den | dem | der | das | Hanging the lamp into a new position uses accusative den Tisch.
+Der Hund sitzt vor ___ Tür. | der | die | dem | den | Sitting in a place uses dative der Tür.
+Der Hund setzt sich vor ___ Tür. | die | der | dem | den | Sitting down in a new position gives a destination and accusative die Tür.
+Die Schlüssel liegen zwischen ___ Büchern. | den | die | dem | der | A location between plural objects uses dative den Büchern.
 Ich lege die Schlüssel zwischen ___ Bücher. | die | den | dem | der | The destination after zwischen takes accusative plural die Bücher.
 Wir gehen im Park spazieren. Welcher Fall folgt auf in? | Dativ | Akkusativ | Nominativ | Genitiv | Movement within a place still describes where the activity happens, so im Park is dative.
 Wir gehen in den Park. Welcher Fall folgt auf in? | Akkusativ | Dativ | Nominativ | Genitiv | The park is the destination, so in takes accusative den Park.
-Die Kinder spielen in ___ Garten. (der Garten) | dem | den | der | das | Playing occurs within the garden; this is a location, so use dative dem Garten.
-Die Kinder laufen in ___ Garten hinein. (der Garten) | den | dem | der | das | Hinein makes the garden the destination, so use accusative den Garten.
+Die Kinder spielen in ___ Garten. | dem | den | der | das | Playing occurs within the garden; this is a location, so use dative dem Garten.
+Die Kinder laufen in ___ Garten hinein. | den | dem | der | das | Hinein makes the garden the destination, so use accusative den Garten.
 """)
 
 add(19, """
@@ -509,7 +509,7 @@ Ich bleibe unten. Trag die Lampe in den ersten Stock ___! | hinauf | herauf | he
 """)
 
 # Additional units are bundled as concrete questions, not generated at runtime.
-# Keep the original 400 questions above unchanged for saved-attempt compatibility.
+# Keep question IDs and answer ordering stable for saved-attempt compatibility.
 for _unit in json.loads((Path(__file__).resolve().parent / "data" / "questions_021_170.json").read_text(encoding="utf-8")):
     _id = _unit["id"]
     if _id in QUESTION_BANK:
